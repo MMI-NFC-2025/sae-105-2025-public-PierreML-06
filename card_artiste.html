@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlotte de Witte - Artiste - Lumimix</title>
+    <!-- Liens CSS -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Header avec logo et menu hamburger -->
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="header__logo-img">
+        </a>
+
+        <button class="header__menu-toggle" aria-label="Menu" aria-expanded="false">
+            <span class="header__menu-toggle-bar"></span>
+            <span class="header__menu-toggle-bar"></span>
+            <span class="header__menu-toggle-bar"></span>
+        </button>
+    </header>
+
+    <!-- Menu plein écran -->
+    <nav class="menu" id="menu">
+        <div class="menu__header">
+            <a href="index.html" class="menu__logo">
+                <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="menu__logo-img">
+            </a>
+
+            <button class="menu__close" aria-label="Fermer le menu">
+                <span class="menu__close-bar"></span>
+                <span class="menu__close-bar"></span>
+            </button>
+        </div>
+
+        <div class="menu__nav">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="festival.html" class="menu__link" data-page="festival">Le Festival</a>
+                </li>
+                <li class="menu__item">
+                    <a href="programation.html" class="menu__link" data-page="programation">Programme</a>
+                </li>
+                <li class="menu__item">
+                    <a href="artiste.html" class="menu__link" data-page="artiste">Artistes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="scene.html" class="menu__link" data-page="scene">Scènes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="info_pratique.html" class="menu__link" data-page="info_pratique">Infos Pratiques</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contact.html" class="menu__link" data-page="contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main class="card-artistePage">
+        <!-- Lien retour sous le header -->
+        <a href="artiste.html" class="card-artistePage__back">
+            <svg class="card-artistePage__back-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m15 18-6-6 6-6" />
+            </svg>
+            <span class="card-artistePage__back-text">Retour aux artistes</span>
+        </a>
+
+        <!-- Hero section avec image de l'artiste -->
+        <section class="card-artistePage__hero">
+            <img src="/placeholder.svg?height=1080&width=1920" alt="Charlotte de Witte"
+                class="card-artistePage__hero-bg">
+            <div class="card-artistePage__hero-overlay"></div>
+            <div class="card-artistePage__hero-content">
+                <span class="card-artistePage__hero-genre">Techno</span>
+                <h1 class="card-artistePage__hero-title">Charlotte de Witte</h1>
+
+                <div class="card-artistePage__hero-info">
+                    <div class="card-artistePage__hero-info-item">
+                        <svg class="card-artistePage__hero-info-icon card-artistePage__hero-info-icon--purple"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                        <span class="card-artistePage__hero-info-text">Vendredi 18 Juillet</span>
+                    </div>
+
+                    <div class="card-artistePage__hero-info-item">
+                        <svg class="card-artistePage__hero-info-icon card-artistePage__hero-info-icon--pink"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span class="card-artistePage__hero-info-text">23:00 - 01:00</span>
+                    </div>
+
+                    <div class="card-artistePage__hero-info-item">
+                        <svg class="card-artistePage__hero-info-icon card-artistePage__hero-info-icon--blue"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span class="card-artistePage__hero-info-text">Main Stage</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ajout de la section À propos de l'artiste -->
+        <section class="card-artistePage__about">
+            <h2 class="card-artistePage__about-title">À propos</h2>
+            <p class="card-artistePage__about-text">
+                DJ et productrice belge de renom, Charlotte de Witte est l'une des figures majeures de la scène techno
+                mondiale. Son style sombre et puissant crée une atmosphère hypnotique unique.
+            </p>
+        </section>
+
+        <!-- Ajout de la section Galerie -->
+        <section class="card-artistePage__gallery">
+            <h2 class="card-artistePage__gallery-title">Galerie</h2>
+            <div class="card-artistePage__gallery-grid">
+                <img src="/placeholder.svg?height=800&width=1200" alt="Scène avec lasers colorés"
+                    class="card-artistePage__gallery-img">
+                <img src="/placeholder.svg?height=800&width=1200" alt="Foule avec éclairage rouge"
+                    class="card-artistePage__gallery-img">
+                <img src="/placeholder.svg?height=800&width=1200" alt="Foule du festival en journée"
+                    class="card-artistePage__gallery-img">
+            </div>
+        </section>
+
+        <!-- Ajout de la section Informations de la performance -->
+        <section class="card-artistePage__performance">
+            <div class="card-artistePage__performance-card">
+                <h2 class="card-artistePage__performance-title">Informations de la performance</h2>
+
+                <div class="card-artistePage__performance-grid">
+                    <div class="card-artistePage__performance-item">
+                        <span class="card-artistePage__performance-label">Date</span>
+                        <span class="card-artistePage__performance-value">Vendredi 18 Juillet</span>
+                    </div>
+
+                    <div class="card-artistePage__performance-item">
+                        <span class="card-artistePage__performance-label">Horaire</span>
+                        <span class="card-artistePage__performance-value">23:00 - 01:00</span>
+                    </div>
+
+                    <div class="card-artistePage__performance-item">
+                        <span class="card-artistePage__performance-label">Scène</span>
+                        <span
+                            class="card-artistePage__performance-value card-artistePage__performance-value--purple">Main
+                            Stage</span>
+                    </div>
+
+                    <div class="card-artistePage__performance-item">
+                        <span class="card-artistePage__performance-label">Genre</span>
+                        <span class="card-artistePage__performance-value">Techno</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="index.html" class="footer__logo">
+            <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="footer__logo-img">
+        </a>
+
+        <p class="footer__description">
+            Un festival nocturne immersif où DJs, son et lumière fusionnent pour créer un voyage sensoriel.
+        </p>
+
+        <!-- Section Navigation -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Navigation</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="festival.html" class="footer__link">Le Festival</a>
+                </li>
+                <li class="footer__item">
+                    <a href="programation.html" class="footer__link">Programme</a>
+                </li>
+                <li class="footer__item">
+                    <a href="artiste.html" class="footer__link">Artistes</a>
+                </li>
+                <li class="footer__item">
+                    <a href="scene.html" class="footer__link">Scènes</a>
+                </li>
+                <li class="footer__item">
+                    <a href="info_pratique.html" class="footer__link">Infos Pratiques</a>
+                </li>
+                <li class="footer__item">
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section Informations -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Informations</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="info_pratique.html" class="footer__link">Infos Pratiques</a>
+                </li>
+                <li class="footer__item">
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">CGV</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Mentions légales</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section Réseaux sociaux -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Suivez-nous</h3>
+            <div class="footer__social">
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                    <img src="assets/icons/youtube.svg" alt="YouTube" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="X (Twitter)">
+                    <img src="assets/icons/x-twitter.svg" alt="X (Twitter)" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                    <img src="assets/icons/instagram.svg" alt="Instagram" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                    <img src="assets/icons/facebook.svg" alt="Facebook" class="footer__social-icon">
+                </a>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <p class="footer__copyright">© 2025 Lumimix Festival. Tous droits réservés.</p>
+    </footer>
+
+    <script type="module" src="src/js/script.js"></script>
+</body>
+
+</html>

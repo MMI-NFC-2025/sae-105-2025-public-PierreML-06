@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumimix</title>
+    <!-- Liens CSS -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Header avec logo et menu hamburger -->
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="header__logo-img">
+        </a>
+
+        <button class="header__menu-toggle" aria-label="Menu" aria-expanded="false">
+            <span class="header__menu-toggle-bar"></span>
+            <span class="header__menu-toggle-bar"></span>
+            <span class="header__menu-toggle-bar"></span>
+        </button>
+    </header>
+
+    <!-- Menu plein écran -->
+    <nav class="menu" id="menu">
+        <div class="menu__header">
+            <a href="index.html" class="menu__logo">
+                <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="menu__logo-img">
+            </a>
+
+            <!-- Utilisation du même bouton menu sans double classe -->
+            <button class="menu__close" aria-label="Fermer le menu">
+                <span class="menu__close-bar"></span>
+                <span class="menu__close-bar"></span>
+            </button>
+        </div>
+
+        <div class="menu__nav">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="festival.html" class="menu__link" data-page="festival">Le Festival</a>
+                </li>
+                <li class="menu__item">
+                    <a href="programation.html" class="menu__link" data-page="programation">Programme</a>
+                </li>
+                <li class="menu__item">
+                    <a href="artiste.html" class="menu__link" data-page="artiste">Artistes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="scene.html" class="menu__link" data-page="scene">Scènes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="info_pratique.html" class="menu__link" data-page="info_pratique">Infos Pratiques</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contact.html" class="menu__link" data-page="contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Ajout de la section hero -->
+    <main>
+        <section class="hero-index">
+            <!-- Déplacement de l'image de fond avant le contenu pour qu'elle soit vraiment derrière -->
+            <img src="assets/img/hero_acceuil.avif" alt="" class="hero-index__bg">
+            <div class="hero-index__content">
+                <!-- Suppression du <br> dans le titre -->
+                <h1 class="hero-index__title">LUMIMIX 2025</h1>
+                <p class="hero-index__subtitle">
+                    Un festival nocturne immersif où DJs, son et lumière fusionnent pour créer un voyage sensoriel
+                    unique
+                </p>
+                <div class="hero-index__buttons">
+                    <a href="#billetterie" class="button button--primary">Billetterie</a>
+                    <a href="programation.html" class="button button--secondary">Découvrir le programme</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ajout de la section information avec les 3 cartes -->
+        <section class="information-section">
+            <!-- Carte 1: 3 Nuits -->
+            <article class="card-information">
+                <img src="assets/icons/calendrier.svg" alt="" class="card-information__icon">
+                <h2 class="card-information__title">3 Nuits</h2>
+                <p class="card-information__subtitle">18, 19 & 20 Juillet 2025</p>
+            </article>
+
+            <!-- Carte 2: Localisation -->
+            <article class="card-information">
+                <img src="assets/icons/locate.svg" alt="" class="card-information__icon">
+                <h2 class="card-information__title">Lac de Malsaucy</h2>
+                <p class="card-information__subtitle">Territoire de Belfort (90)</p>
+            </article>
+
+            <!-- Carte 3: Artistes -->
+            <article class="card-information">
+                <img src="assets/icons/musique.svg" alt="" class="card-information__icon">
+                <h2 class="card-information__title">8 Artistes</h2>
+                <p class="card-information__subtitle">Les meilleurs DJs internationaux</p>
+            </article>
+        </section>
+
+
+        <!-- Ajout de la section Nos Valeurs -->
+        <section class="values-section">
+            <h2 class="values-section__title">Nos Valeurs</h2>
+
+            <ul class="values-section__list">
+                <!-- Valeur 1: Inclusion -->
+                <li class="value-card">
+                    <div class="value-card__icon-wrapper value-card__icon-wrapper--violet">
+                        <img src="assets/icons/user_multi.svg" alt="" class="value-card__icon">
+                    </div>
+                    <h3 class="value-card__title">Inclusion</h3>
+                    <p class="value-card__description">
+                        Un festival ouvert à toutes et tous, où chacun se sent accueilli, respecté et libre de vivre la
+                        fête, peu importe son style ou son origine.
+                    </p>
+                </li>
+
+                <!-- Valeur 2: Créativité -->
+                <li class="value-card">
+                    <div class="value-card__icon-wrapper value-card__icon-wrapper--pink">
+                        <img src="assets/icons/etoile.svg" alt="" class="value-card__icon">
+                    </div>
+                    <h3 class="value-card__title">Créativité</h3>
+                    <p class="value-card__description">
+                        Un terrain d'expression où l'imagination et l'innovation prennent vie : des shows qui racontent
+                        une histoire, un festival unique en renouvellement constant.
+                    </p>
+                </li>
+
+                <!-- Valeur 3: Divertissement -->
+                <li class="value-card">
+                    <div class="value-card__icon-wrapper value-card__icon-wrapper--blue">
+                        <img src="assets/icons/ticket.svg" alt="" class="value-card__icon">
+                    </div>
+                    <h3 class="value-card__title">Divertissement</h3>
+                    <p class="value-card__description">
+                        Un moment de plaisir pur : énergie, danse, émotions positives, déconnexion du quotidien — vibrer
+                        au son des basses et s'en mettre plein les yeux.
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- Ajout de la section cartes de navigation -->
+        <section class="nav-cards">
+            <!-- Carte 1: Programme -->
+            <a href="programation.html" class="card-nav">
+                <img src="assets/img/scene_bleu_fond.avif" alt="" class="card-nav__img">
+                <div class="card-nav__overlay"></div>
+                <h2 class="card-nav__title">Programme</h2>
+            </a>
+
+            <!-- Carte 2: Artistes -->
+            <a href="artiste.html" class="card-nav">
+                <img src="assets/img/dj_fond.avif" alt="" class="card-nav__img">
+                <div class="card-nav__overlay"></div>
+                <h2 class="card-nav__title">Artistes</h2>
+            </a>
+
+            <!-- Carte 3: Scènes -->
+            <a href="scene.html" class="card-nav">
+                <img src="assets/img/scene_rouge_fond.avif" alt="" class="card-nav__img">
+                <div class="card-nav__overlay"></div>
+                <h2 class="card-nav__title">Scènes</h2>
+            </a>
+
+            <!-- Carte 4: Infos Pratiques -->
+            <a href="info_pratique.html" class="card-nav">
+                <img src="assets/img/public_fond.avif" alt="" class="card-nav__img">
+                <div class="card-nav__overlay"></div>
+                <h2 class="card-nav__title">Infos Pratiques</h2>
+            </a>
+        </section>
+
+        <!-- Ajout de la section Nos Partenaires -->
+        <section class="partners-section">
+            <h2 class="partners-section__title">Nos Partenaires</h2>
+
+            <ul class="partners-section__grid">
+                <!-- Partenaire 1: Crédit Mutuel -->
+                <li class="card-partenaire">
+                    <img src="assets/icons/logo_credit_mutuel.svg" alt="Crédit Mutuel" class="card-partenaire__logo">
+                    <p class="card-partenaire__name">Crédit Mutuel</p>
+                </li>
+
+                <!-- Partenaire 2: Desperados -->
+                <li class="card-partenaire">
+                    <img src="assets/icons/logo_desperados.svg" alt="Desperados" class="card-partenaire__logo">
+                    <p class="card-partenaire__name">Desperados</p>
+                </li>
+
+                <!-- Partenaire 3: Weezevent -->
+                <li class="card-partenaire">
+                    <img src="assets/icons/logo_weezevent.svg" alt="Weezevent" class="card-partenaire__logo">
+                    <p class="card-partenaire__name">Weezevent</p>
+                </li>
+
+                <!-- Partenaire 4: Coca cola -->
+                <li class="card-partenaire">
+                    <img src="assets/icons/logo_coca_cola.svg" alt="Coca cola" class="card-partenaire__logo">
+                    <p class="card-partenaire__name">Coca cola</p>
+                </li>
+
+                <!-- Partenaire 5: Deezer -->
+                <li class="card-partenaire">
+                    <img src="assets/icons/logo_deezer.svg" alt="Deezer" class="card-partenaire__logo">
+                    <p class="card-partenaire__name">Deezer</p>
+                </li>
+
+                <!-- Partenaire 6: NRJ -->
+                <li class="card-partenaire">
+                    <img src="assets/icons/logo_nrj.svg" alt="NRJ" class="card-partenaire__logo">
+                    <p class="card-partenaire__name">NRJ</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Ajout du footer -->
+    <footer class="footer">
+        <a href="index.html" class="footer__logo">
+            <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="footer__logo-img">
+        </a>
+
+        <p class="footer__description">
+            Un festival nocturne immersif où DJs, son et lumière fusionnent pour créer un voyage sensoriel.
+        </p>
+
+        <!-- Section Navigation -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Navigation</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="festival.html" class="footer__link">Le Festival</a>
+                </li>
+                <li class="footer__item">
+                    <a href="programation.html" class="footer__link">Programme</a>
+                </li>
+                <li class="footer__item">
+                    <a href="artiste.html" class="footer__link">Artistes</a>
+                </li>
+                <li class="footer__item">
+                    <a href="scene.html" class="footer__link">Scènes</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section Informations -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Informations</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="info_pratique.html" class="footer__link">Infos Pratiques</a>
+                </li>
+                <li class="footer__item">
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">CGV</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Mentions légales</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section Réseaux sociaux -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Suivez-nous</h3>
+            <div class="footer__social">
+                <!-- Utilisation d'images SVG depuis assets/icons au lieu de SVG inline -->
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                    <img src="assets/icons/youtube.svg" alt="YouTube" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="X (Twitter)">
+                    <img src="assets/icons/x-twitter.svg" alt="X (Twitter)" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                    <img src="assets/icons/instagram.svg" alt="Instagram" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                    <img src="assets/icons/facebook.svg" alt="Facebook" class="footer__social-icon">
+                </a>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <p class="footer__copyright">© 2025 Lumimix Festival. Tous droits réservés.</p>
+    </footer>
+
+    <script type="module" src="src/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme - Lumimix</title>
+    <!-- Liens CSS -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Header avec logo et menu hamburger -->
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="header__logo-img">
+        </a>
+
+        <button class="header__menu-toggle" aria-label="Menu" aria-expanded="false">
+            <span class="header__menu-toggle-bar"></span>
+            <span class="header__menu-toggle-bar"></span>
+            <span class="header__menu-toggle-bar"></span>
+        </button>
+    </header>
+
+    <!-- Menu plein écran -->
+    <nav class="menu" id="menu">
+        <div class="menu__header">
+            <a href="index.html" class="menu__logo">
+                <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="menu__logo-img">
+            </a>
+
+            <button class="menu__close" aria-label="Fermer le menu">
+                <span class="menu__close-bar"></span>
+                <span class="menu__close-bar"></span>
+            </button>
+        </div>
+
+        <div class="menu__nav">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="festival.html" class="menu__link" data-page="festival">Le Festival</a>
+                </li>
+                <li class="menu__item">
+                    <a href="programation.html" class="menu__link" data-page="programation">Programme</a>
+                </li>
+                <li class="menu__item">
+                    <a href="artiste.html" class="menu__link" data-page="artiste">Artistes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="scene.html" class="menu__link" data-page="scene">Scènes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="info_pratique.html" class="menu__link" data-page="info_pratique">Infos Pratiques</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contact.html" class="menu__link" data-page="contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <main>
+        <section class="hero">
+            <img src="assets/img/scene_bleu_fond.avif" alt="" class="hero__bg">
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <h1 class="hero__title">Programme</h1>
+                <p class="hero__subtitle">3 nuits de musique électronique avec les meilleurs DJs</p>
+            </div>
+        </section>
+
+        <!-- Ajout de la section filtre -->
+        <section class="filtre">
+            <div class="filtre__header">
+                <img src="assets/icons/filtre.svg" alt="" class="filtre__icon">
+                <h2 class="filtre__title">Filtrer par :</h2>
+            </div>
+
+            <form class="filtre__form">
+                <!-- Ajout du wrapper pour positionner la flèche -->
+                <div class="filtre__select-wrapper">
+                    <select class="filtre__select" name="jour" id="jour">
+                        <option value="">Tous les jours</option>
+                        <option value="jour1">Jour 1</option>
+                        <option value="jour2">Jour 2</option>
+                        <option value="jour3">Jour 3</option>
+                    </select>
+                    <img src="assets/icons/btn_beugeur.svg" alt="" class="filtre__select-arrow">
+                </div>
+
+                <div class="filtre__select-wrapper">
+                    <select class="filtre__select" name="genre" id="genre">
+                        <option value="">Tous les genres</option>
+                        <option value="techno">Techno</option>
+                        <option value="house">House</option>
+                        <option value="trance">Trance</option>
+                    </select>
+                    <img src="assets/icons/btn_beugeur.svg" alt="" class="filtre__select-arrow">
+                </div>
+
+                <div class="filtre__select-wrapper">
+                    <select class="filtre__select" name="scene" id="scene">
+                        <option value="">Toutes les scènes</option>
+                        <option value="main">Scène principale</option>
+                        <option value="second">Scène secondaire</option>
+                        <option value="club">Club</option>
+                    </select>
+                    <img src="assets/icons/btn_beugeur.svg" alt="" class="filtre__select-arrow">
+                </div>
+
+                <button type="button" class="button button--primary filtre__button">
+                    <img src="assets/icons/dowload.svg" alt="" class="filtre__button-icon">
+                    Télécharger le PDF
+                </button>
+            </form>
+        </section>
+
+        <!-- Ajout de la section programmation avec cartes -->
+        <section class="programation-section">
+            <h2 class="programation-section__day-title">Vendredi 18 Juillet</h2>
+
+            <div class="programation-section__cards">
+                <article class="programation-card">
+                    <div class="programation-card__image-wrapper">
+                        <img src="assets/img/scene_rouge_coeur.avif" alt="Charlotte de Witte"
+                            class="programation-card__image">
+                    </div>
+                    <div class="programation-card__content">
+                        <h3 class="programation-card__artist">Charlotte de Witte</h3>
+                        <p class="programation-card__genre">Techno</p>
+                        <div class="programation-card__info">
+                            <p class="programation-card__time">23:00 - 01:00</p>
+                            <p class="programation-card__stage">Main Stage</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Ajout de la carte Ben Böhmer -->
+                <article class="programation-card">
+                    <div class="programation-card__image-wrapper">
+                        <img src="assets/img/scene_bleu_croix.avif" alt="Ben Böhmer" class="programation-card__image">
+                    </div>
+                    <div class="programation-card__content">
+                        <h3 class="programation-card__artist">Ben Böhmer</h3>
+                        <p class="programation-card__genre">Melodic House</p>
+                        <div class="programation-card__info">
+                            <p class="programation-card__time">21:00 - 23:00</p>
+                            <p class="programation-card__stage">Reflets Stage</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Ajout de la carte Anfisa Letyago -->
+                <article class="programation-card">
+                    <div class="programation-card__image-wrapper">
+                        <img src="assets/img/scene_violet.avif" alt="Anfisa Letyago" class="programation-card__image">
+                    </div>
+                    <div class="programation-card__content">
+                        <h3 class="programation-card__artist">Anfisa Letyago</h3>
+                        <p class="programation-card__genre">Techno</p>
+                        <div class="programation-card__info">
+                            <p class="programation-card__time">01:00 - 03:00</p>
+                            <p class="programation-card__stage">Drones Stage</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="programation-section">
+            <h2 class="programation-section__day-title">Samedi 19 Juillet</h2>
+
+            <div class="programation-section__cards">
+                <article class="programation-card">
+                    <div class="programation-card__image-wrapper">
+                        <img src="assets/img/scene_bleu.avif" alt="Charlotte de Witte" class="programation-card__image">
+                    </div>
+                    <div class="programation-card__content">
+                        <h3 class="programation-card__artist">Amelie Lens</h3>
+                        <p class="programation-card__genre">Techno</p>
+                        <div class="programation-card__info">
+                            <p class="programation-card__time">00:00 - 02:00</p>
+                            <p class="programation-card__stage">Main Stage</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Ajout de la carte Ben Böhmer -->
+                <article class="programation-card">
+                    <div class="programation-card__image-wrapper">
+                        <img src="assets/img/scene_violet_lazer.avif" alt="Ben Böhmer" class="programation-card__image">
+                    </div>
+                    <div class="programation-card__content">
+                        <h3 class="programation-card__artist">Nina Kraviz</h3>
+                        <p class="programation-card__genre">Techno / House</p>
+                        <div class="programation-card__info">
+                            <p class="programation-card__time">22:00 - 00:00</p>
+                            <p class="programation-card__stage">Main Stage</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Ajout de la carte Anfisa Letyago -->
+                <article class="programation-card">
+                    <div class="programation-card__image-wrapper">
+                        <img src="assets/img/scene_rouge_lune.avif" alt="Anfisa Letyago"
+                            class="programation-card__image">
+                    </div>
+                    <div class="programation-card__content">
+                        <h3 class="programation-card__artist">Stephan Bodzin</h3>
+                        <p class="programation-card__genre">Melodic Techno</p>
+                        <div class="programation-card__info">
+                            <p class="programation-card__time">02:00 - 04:00</p>
+                            <p class="programation-card__stage">Reflets Stage</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="programation-section">
+            <h2 class="programation-section__day-title">Dimanche 20 Juillet</h2>
+
+            <div class="programation-section__cards">
+                <article class="programation-card">
+                    <div class="programation-card__image-wrapper">
+                        <img src="assets/img/scene_rouge_lazer.avif" alt="Charlotte de Witte"
+                            class="programation-card__image">
+                    </div>
+                    <div class="programation-card__content">
+                        <h3 class="programation-card__artist">Maceo Plex</h3>
+                        <p class="programation-card__genre">Techno / House</p>
+                        <div class="programation-card__info">
+                            <p class="programation-card__time">23:00 - 01:30</p>
+                            <p class="programation-card__stage">Main Stage</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Ajout de la carte Ben Böhmer -->
+                <article class="programation-card">
+                    <div class="programation-card__image-wrapper">
+                        <img src="assets/img/scene_blanc.avif" alt="Ben Böhmer" class="programation-card__image">
+                    </div>
+                    <div class="programation-card__content">
+                        <h3 class="programation-card__artist">Tale of Us</h3>
+                        <p class="programation-card__genre">Melodic Techno</p>
+                        <div class="programation-card__info">
+                            <p class="programation-card__time">21:00 - 23:00</p>
+                            <p class="programation-card__stage">Reflets Stage</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="index.html" class="footer__logo">
+            <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="footer__logo-img">
+        </a>
+
+        <p class="footer__description">
+            Un festival nocturne immersif où DJs, son et lumière fusionnent pour créer un voyage sensoriel.
+        </p>
+
+        <!-- Section Navigation -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Navigation</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="festival.html" class="footer__link">Le Festival</a>
+                </li>
+                <li class="footer__item">
+                    <a href="programation.html" class="footer__link">Programme</a>
+                </li>
+                <li class="footer__item">
+                    <a href="artiste.html" class="footer__link">Artistes</a>
+                </li>
+                <li class="footer__item">
+                    <a href="scene.html" class="footer__link">Scènes</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section Informations -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Informations</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="info_pratique.html" class="footer__link">Infos Pratiques</a>
+                </li>
+                <li class="footer__item">
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">CGV</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Mentions légales</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section Réseaux sociaux -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Suivez-nous</h3>
+            <div class="footer__social">
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                    <img src="assets/icons/youtube.svg" alt="YouTube" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="X (Twitter)">
+                    <img src="assets/icons/x.svg" alt="X (Twitter)" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                    <img src="assets/icons/instagram.svg" alt="Instagram" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                    <img src="assets/icons/facebook.svg" alt="Facebook" class="footer__social-icon">
+                </a>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <p class="footer__copyright">© 2025 Lumimix Festival. Tous droits réservés.</p>
+    </footer>
+
+    <script type="module" src="src/js/script.js"></script>
+</body>
+
+</html>

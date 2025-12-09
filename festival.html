@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - Lumimix</title>
+    <!-- Liens CSS -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Header avec logo et menu hamburger -->
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="header__logo-img">
+        </a>
+
+        <button class="header__menu-toggle" aria-label="Menu" aria-expanded="false">
+            <span class="header__menu-toggle-bar"></span>
+            <span class="header__menu-toggle-bar"></span>
+            <span class="header__menu-toggle-bar"></span>
+        </button>
+    </header>
+
+    <!-- Menu plein écran -->
+    <nav class="menu" id="menu">
+        <div class="menu__header">
+            <a href="index.html" class="menu__logo">
+                <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="menu__logo-img">
+            </a>
+
+            <button class="menu__close" aria-label="Fermer le menu">
+                <span class="menu__close-bar"></span>
+                <span class="menu__close-bar"></span>
+            </button>
+        </div>
+
+        <div class="menu__nav">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="festival.html" class="menu__link" data-page="festival">Le Festival</a>
+                </li>
+                <li class="menu__item">
+                    <a href="programation.html" class="menu__link" data-page="programation">Programme</a>
+                </li>
+                <li class="menu__item">
+                    <a href="artiste.html" class="menu__link" data-page="artiste">Artistes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="scene.html" class="menu__link" data-page="scene">Scènes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="info_pratique.html" class="menu__link" data-page="info_pratique">Infos Pratiques</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contact.html" class="menu__link" data-page="contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <main>
+        <section class="hero">
+            <img src="assets/img/scene_rouge_fond-2.avif" alt="" class="hero__bg">
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <h1 class="hero__title">Le Festival</h1>
+                <p class="hero__subtitle">Découvrez l'histoire et les valeurs de Lumimix</p>
+            </div>
+        </section>
+
+        <!-- Ajout de la section Notre Histoire -->
+        <section class="a-propos">
+            <h2 class="a-propos__title">Notre Histoire</h2>
+            <div class="a-propos__content">
+                <p class="a-propos__text">
+                    Lumimix est né en 2023 d'une vision simple mais ambitieuse : créer un festival où la musique
+                    électronique rencontre l'art visuel dans un cadre naturel exceptionnel.
+                </p>
+
+                <p class="a-propos__text">
+                    Situé au cœur du lac de Malsaucy dans le Territoire de Belfort, notre festival transforme ce lieu
+                    magique en une scène immersive où la lumière danse sur l'eau, où les drones illuminent le ciel
+                    nocturne, et où les plus grands DJs internationaux créent des moments inoubliables.
+                </p>
+
+                <p class="a-propos__text">
+                    Chaque édition repousse les limites de la créativité avec des scénographies toujours plus
+                    innovantes, tout en restant fidèle à nos valeurs d'inclusion, de créativité et de divertissement
+                    pur.
+                </p>
+
+                <div class="media">
+                    <img src="assets/img/public_lumimix.avif" alt="Festival Lumimix" class="media__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Ajout de la section Notre Charte de Valeurs -->
+        <section class="valeur">
+            <h2 class="valeur__title">Notre Charte de Valeurs</h2>
+            <div class="valeur__grid">
+                <!-- Inclusion -->
+                <article class="valeur__card">
+                    <div class="valeur__card-header">
+                        <img src="assets/icons/user_multi.svg" alt="" class="valeur__icon">
+                        <h3 class="valeur__card-title">Inclusion</h3>
+                    </div>
+                    <p class="valeur__card-description">
+                        Un festival ouvert à toutes et tous, où chacun se sent accueilli, respecté et libre de vivre la
+                        fête, peu importe son style ou son origine.
+                    </p>
+                </article>
+
+                <!-- Créativité -->
+                <article class="valeur__card">
+                    <div class="valeur__card-header">
+                        <img src="assets/icons/etoile.svg" alt="" class="valeur__icon">
+                        <h3 class="valeur__card-title">Créativité</h3>
+                    </div>
+                    <p class="valeur__card-description">
+                        Un terrain d'expression où l'imagination et l'innovation prennent vie : des shows qui racontent
+                        une histoire, des idées visuelles nouvelles, un festival unique et en renouvellement constant.
+                    </p>
+                </article>
+
+                <!-- Divertissement -->
+                <article class="valeur__card">
+                    <div class="valeur__card-header">
+                        <img src="assets/icons/cible.svg" alt="" class="valeur__icon">
+                        <h3 class="valeur__card-title">Divertissement</h3>
+                    </div>
+                    <p class="valeur__card-description">
+                        Un moment de plaisir pur : énergie, danse, émotions positives, déconnexion du quotidien — "s'en
+                        mettre plein les yeux" autant que vibrer au son des basses.
+                    </p>
+                </article>
+
+                <!-- Convivialité & Bienveillance -->
+                <article class="valeur__card valeur__card--highlight">
+                    <div class="valeur__card-header">
+                        <img src="assets/icons/heart.svg" alt="" class="valeur__icon">
+                        <h3 class="valeur__card-title">Convivialité & Bienveillance</h3>
+                    </div>
+                    <p class="valeur__card-description">
+                        Une ambiance safe, collective et positive où chacun peut profiter de l'expérience en toute
+                        sécurité et dans le respect mutuel.
+                    </p>
+                </article>
+
+                <!-- Émerveillement -->
+                <article class="valeur__card valeur__card--highlight">
+                    <div class="valeur__card-header">
+                        <img src="assets/icons/etoile.svg" alt="" class="valeur__icon">
+                        <h3 class="valeur__card-title">Émerveillement</h3>
+                    </div>
+                    <p class="valeur__card-description">
+                        Une nuit magique, des surprises visuelles à chaque coin, une expérience mémorable qui reste
+                        gravée dans les mémoires.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Ajout de la section Notre Équipe -->
+        <section class="equipe">
+            <div class="equipe__header">
+                <h2 class="equipe__title">Notre Équipe</h2>
+                <p class="equipe__subtitle">
+                    Des passionnés qui travaillent toute l'année pour vous offrir une expérience inoubliable
+                </p>
+            </div>
+
+            <div class="equipe__grid">
+                <!-- Sophie Martin -->
+                <article class="equipe__card">
+                    <div class="equipe__avatar">S</div>
+                    <h3 class="equipe__name">Sophie Martin</h3>
+                    <p class="equipe__role">Directrice du Festival</p>
+                    <p class="equipe__description">
+                        Passionnée de musique électronique depuis 15 ans
+                    </p>
+                </article>
+
+                <!-- Lucas Dubois -->
+                <article class="equipe__card">
+                    <div class="equipe__avatar">L</div>
+                    <h3 class="equipe__name">Lucas Dubois</h3>
+                    <p class="equipe__role">Directeur Artistique</p>
+                    <p class="equipe__description">
+                        Ancien programmateur de clubs parisiens
+                    </p>
+                </article>
+
+                <!-- Emma Laurent -->
+                <article class="equipe__card">
+                    <div class="equipe__avatar">E</div>
+                    <h3 class="equipe__name">Emma Laurent</h3>
+                    <p class="equipe__role">Responsable Scénographie</p>
+                    <p class="equipe__description">
+                        Spécialiste en design lumière et installation immersive
+                    </p>
+                </article>
+
+                <!-- Thomas Bernard -->
+                <article class="equipe__card">
+                    <div class="equipe__avatar">T</div>
+                    <h3 class="equipe__name">Thomas Bernard</h3>
+                    <p class="equipe__role">Responsable Technique</p>
+                    <p class="equipe__description">
+                        Expert son et lumière avec 20 ans d'expérience
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Ajout de la section Notre Mission -->
+        <section class="mission">
+            <h2 class="mission__title">Notre Mission</h2>
+            <div class="mission__content">
+                <p class="mission__text">
+                    Créer un voyage sensoriel unique où la musique, la lumière et la nature fusionnent pour offrir une
+                    expérience immersive et mémorable.
+                </p>
+                <p class="mission__text mission__text--secondary">
+                    Nous croyons que la musique électronique transcende les frontières et unit les gens. Lumimix est
+                    plus qu'un festival — c'est une célébration de la vie nocturne, de l'innovation artistique et du
+                    pouvoir de la communauté.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="index.html" class="footer__logo">
+            <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="footer__logo-img">
+        </a>
+
+        <p class="footer__description">
+            Un festival nocturne immersif où DJs, son et lumière fusionnent pour créer un voyage sensoriel.
+        </p>
+
+        <!-- Section Navigation -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Navigation</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="festival.html" class="footer__link">Le Festival</a>
+                </li>
+                <li class="footer__item">
+                    <a href="programation.html" class="footer__link">Programme</a>
+                </li>
+                <li class="footer__item">
+                    <a href="artiste.html" class="footer__link">Artistes</a>
+                </li>
+                <li class="footer__item">
+                    <a href="scene.html" class="footer__link">Scènes</a>
+                </li>
+                <li class="footer__item">
+                    <a href="info_pratique.html" class="footer__link">Infos Pratiques</a>
+                </li>
+                <li class="footer__item">
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section Informations -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Informations</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="info_pratique.html" class="footer__link">Infos Pratiques</a>
+                </li>
+                <li class="footer__item">
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">CGV</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Mentions légales</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section Réseaux sociaux -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Suivez-nous</h3>
+            <div class="footer__social">
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                    <img src="assets/icons/youtube.svg" alt="YouTube" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="X (Twitter)">
+                    <img src="assets/icons/x-twitter.svg" alt="X (Twitter)" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                    <img src="assets/icons/instagram.svg" alt="Instagram" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                    <img src="assets/icons/facebook.svg" alt="Facebook" class="footer__social-icon">
+                </a>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <p class="footer__copyright">© 2025 Lumimix Festival. Tous droits réservés.</p>
+    </footer>
+
+    <script type="module" src="src/js/script.js"></script>
+</body>
+
+</html>

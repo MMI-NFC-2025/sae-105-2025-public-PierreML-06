@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infos Pratiques - Lumimix</title>
+    <!-- Liens CSS -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Header avec logo et menu hamburger -->
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="header__logo-img">
+        </a>
+
+        <button class="header__menu-toggle" aria-label="Menu" aria-expanded="false">
+            <span class="header__menu-toggle-bar"></span>
+            <span class="header__menu-toggle-bar"></span>
+            <span class="header__menu-toggle-bar"></span>
+        </button>
+    </header>
+
+    <!-- Menu plein écran -->
+    <nav class="menu" id="menu">
+        <div class="menu__header">
+            <a href="index.html" class="menu__logo">
+                <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="menu__logo-img">
+            </a>
+
+            <button class="menu__close" aria-label="Fermer le menu">
+                <span class="menu__close-bar"></span>
+                <span class="menu__close-bar"></span>
+            </button>
+        </div>
+
+        <div class="menu__nav">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="festival.html" class="menu__link" data-page="festival">Le Festival</a>
+                </li>
+                <li class="menu__item">
+                    <a href="programation.html" class="menu__link" data-page="programation">Programme</a>
+                </li>
+                <li class="menu__item">
+                    <a href="artiste.html" class="menu__link" data-page="artiste">Artistes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="scene.html" class="menu__link" data-page="scene">Scènes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="info_pratique.html" class="menu__link" data-page="info_pratique">Infos Pratiques</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contact.html" class="menu__link" data-page="contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <main>
+        <section class="hero">
+            <img src="/placeholder.svg?height=1080&width=1920" alt="" class="hero__bg">
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <h1 class="hero__title">Infos Pratiques</h1>
+                <p class="hero__subtitle">Tout ce que vous devez savoir pour profiter au mieux du festival</p>
+            </div>
+        </section>
+
+        <!-- Section tarifs -->
+        <section class="tarifs">
+            <div class="tarifs__container">
+                <div class="tarifs__header">
+                    <img src="assets/icons/ticket.svg" alt="" class="tarifs__icon">
+                    <h2 class="tarifs__title">Tarifs</h2>
+                </div>
+
+                <div class="tarifs__grid">
+                    <!-- Pass 1 Jour -->
+                    <article class="card-tarif">
+                        <h3 class="card-tarif__name">Pass 1 Jour</h3>
+                        <p class="card-tarif__price">65€</p>
+                        <ul class="card-tarif__features">
+                            <li class="card-tarif__feature">Accès 1 journée complète</li>
+                            <li class="card-tarif__feature">Accès à toutes les scènes</li>
+                            <li class="card-tarif__feature">Parking inclus</li>
+                        </ul>
+                    </article>
+
+                    <!-- Pass 3 Jours - Populaire -->
+                    <article class="card-tarif card-tarif--populaire">
+                        <span class="card-tarif__badge">Populaire</span>
+                        <h3 class="card-tarif__name">Pass 3 Jours</h3>
+                        <p class="card-tarif__price">150€</p>
+                        <ul class="card-tarif__features">
+                            <li class="card-tarif__feature">Accès 3 jours complets</li>
+                            <li class="card-tarif__feature">Accès à toutes les scènes</li>
+                            <li class="card-tarif__feature">Parking inclus</li>
+                            <li class="card-tarif__feature">Merch exclusif</li>
+                        </ul>
+                    </article>
+
+                    <!-- Pass VIP -->
+                    <article class="card-tarif">
+                        <h3 class="card-tarif__name">Pass VIP</h3>
+                        <p class="card-tarif__price">299€</p>
+                        <ul class="card-tarif__features">
+                            <li class="card-tarif__feature">Tout du Pass 3 Jours</li>
+                            <li class="card-tarif__feature">Zone VIP privée</li>
+                            <li class="card-tarif__feature">Bar privé</li>
+                            <li class="card-tarif__feature">Meet & Greet artistes</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section hébergements -->
+        <section class="hebergements">
+            <div class="hebergements__container">
+                <div class="hebergements__header">
+                    <img src="assets/icons/hotel.svg" alt="" class="hebergements__icon">
+                    <h2 class="hebergements__title">Hébergements</h2>
+                </div>
+
+                <div class="hebergements__grid">
+                    <!-- Camping Standard -->
+                    <article class="card-hebergement">
+                        <h3 class="card-hebergement__name">Camping Standard</h3>
+                        <p class="card-hebergement__description">
+                            Emplacements camping pour tente personnelle, accès sanitaires et douches.
+                        </p>
+                        <p class="card-hebergement__price">20€ / nuit</p>
+                    </article>
+
+                    <!-- Camping Confort -->
+                    <article class="card-hebergement">
+                        <h3 class="card-hebergement__name">Camping Confort</h3>
+                        <p class="card-hebergement__description">
+                            Emplacements délimités avec accès électricité, sanitaires premium.
+                        </p>
+                        <p class="card-hebergement__price">40€ / nuit</p>
+                    </article>
+
+                    <!-- Glamping -->
+                    <article class="card-hebergement">
+                        <h3 class="card-hebergement__name">Glamping</h3>
+                        <p class="card-hebergement__description">
+                            Tentes pré-installées tout confort avec lits, électricité, mobilier.
+                        </p>
+                        <p class="card-hebergement__price">120€ / nuit</p>
+                    </article>
+
+                    <!-- Hôtels partenaires -->
+                    <article class="card-hebergement card-hebergement--partenaire">
+                        <h3 class="card-hebergement__name">Hôtels partenaires</h3>
+                        <p class="card-hebergement__description">
+                            Nous avons négocié des tarifs préférentiels avec plusieurs hôtels de Belfort et Mulhouse.
+                        </p>
+                        <ul class="card-hebergement__hotels">
+                            <li class="card-hebergement__hotel">Hôtel Le Tonneau d'Or - Belfort (10 km) - à partir de
+                                85€/nuit</li>
+                            <li class="card-hebergement__hotel">Ibis Belfort Centre - Belfort (12 km) - à partir de
+                                75€/nuit</li>
+                            <li class="card-hebergement__hotel">Mercure Mulhouse Centre - Mulhouse (20 km) - à partir de
+                                95€/nuit</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Transport & Accès -->
+        <section class="transport">
+            <div class="transport__container">
+                <div class="transport__header">
+                    <img src="assets/icons/car.svg" alt="" class="transport__icon">
+                    <h2 class="transport__title">Transport & Accès</h2>
+                </div>
+
+                <div class="transport__grid">
+                    <!-- En voiture -->
+                    <article class="card-transport">
+                        <div class="card-transport__header">
+                            <img src="assets/icons/car.svg" alt="" class="card-transport__icon">
+                            <h3 class="card-transport__title">En voiture</h3>
+                        </div>
+                        <ul class="card-transport__routes">
+                            <li class="card-transport__route">Depuis Belfort : 15 min via D465</li>
+                            <li class="card-transport__route">Depuis Mulhouse : 25 min via A36</li>
+                            <li class="card-transport__route">Depuis Paris : 4h30 via A36</li>
+                        </ul>
+                        <p class="card-transport__note">
+                            Parkings gratuits sur place avec navettes vers l'entrée.
+                        </p>
+                    </article>
+
+                    <!-- En train -->
+                    <article class="card-transport">
+                        <div class="card-transport__header">
+                            <img src="assets/icons/train.svg" alt="" class="card-transport__icon">
+                            <h3 class="card-transport__title">En train</h3>
+                        </div>
+                        <ul class="card-transport__routes">
+                            <li class="card-transport__route">Gare de Belfort-Montbéliard TGV</li>
+                            <li class="card-transport__route">Paris-Belfort : 2h30</li>
+                            <li class="card-transport__route">Lyon-Belfort : 3h</li>
+                        </ul>
+                        <p class="card-transport__note">
+                            Navettes gratuites depuis la gare vers le festival.
+                        </p>
+                    </article>
+
+                    <!-- Covoiturage -->
+                    <article class="card-transport card-transport--covoiturage">
+                        <div class="card-transport__header">
+                            <img src="assets/icons/users.svg" alt="" class="card-transport__icon">
+                            <h3 class="card-transport__title">Covoiturage</h3>
+                        </div>
+                        <p class="card-transport__note" style="margin-bottom: 1rem;">
+                            Parking covoiturage dédié avec places réservées. Utilisez l'application BlaBlaCar avec le
+                            code LUMIMIX2025 pour trouver des covoitureurs.
+                        </p>
+                        <p class="card-transport__note">
+                            Réduction de 10€ sur votre billet si vous arrivez à 4 dans un véhicule.
+                        </p>
+                    </article>
+
+                    <!-- Adresse du festival -->
+                    <article class="card-transport card-transport--adresse">
+                        <div class="card-transport__header">
+                            <img src="assets/icons/map-pin.svg" alt="" class="card-transport__icon">
+                            <h3 class="card-transport__title">Adresse du festival</h3>
+                        </div>
+                        <address class="card-transport__address">
+                            <p class="card-transport__address-line">Base de loisirs du Malsaucy</p>
+                            <p class="card-transport__address-line">90300 Sermamagny, France</p>
+                        </address>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section FAQ -->
+        <section class="faq">
+            <div class="faq__container">
+                <div class="faq__header">
+                    <img src="assets/icons/help-circle.svg" alt="" class="faq__icon">
+                    <h2 class="faq__title">FAQ</h2>
+                </div>
+
+                <div class="faq__list">
+                    <!-- Question 1 -->
+                    <article class="faq-item">
+                        <button class="faq-item__button" aria-expanded="false">
+                            <span class="faq-item__question">Quelles sont les dates du festival ?</span>
+                            <span class="faq-item__icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p class="faq-item__answer-text">
+                                Le festival Lumimix se déroulera du 18 au 20 juillet 2025. Les portes ouvrent à 17h
+                                chaque jour et la programmation se termine à 3h du matin.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Question 2 -->
+                    <article class="faq-item">
+                        <button class="faq-item__button" aria-expanded="false">
+                            <span class="faq-item__question">Où se trouve le festival ?</span>
+                            <span class="faq-item__icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p class="faq-item__answer-text">
+                                Le festival a lieu à la Base de loisirs du Malsaucy, 90300 Sermamagny, France. Le site
+                                est facilement accessible en voiture, train ou covoiturage avec des navettes gratuites
+                                disponibles.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Question 3 -->
+                    <article class="faq-item">
+                        <button class="faq-item__button" aria-expanded="false">
+                            <span class="faq-item__question">Les billets sont-ils remboursables ?</span>
+                            <span class="faq-item__icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p class="faq-item__answer-text">
+                                Les billets ne sont pas remboursables sauf en cas d'annulation du festival. Toutefois,
+                                vous pouvez transférer votre billet à une autre personne via votre compte utilisateur
+                                jusqu'à 48h avant l'événement.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Question 4 -->
+                    <article class="faq-item">
+                        <button class="faq-item__button" aria-expanded="false">
+                            <span class="faq-item__question">Y a-t-il un camping sur place ?</span>
+                            <span class="faq-item__icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p class="faq-item__answer-text">
+                                Oui, nous proposons trois types d'hébergement sur place : Camping Standard (20€/nuit),
+                                Camping Confort (40€/nuit) et Glamping (120€/nuit). Tous incluent l'accès aux sanitaires
+                                et douches.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Question 5 -->
+                    <article class="faq-item">
+                        <button class="faq-item__button" aria-expanded="false">
+                            <span class="faq-item__question">Le festival est-il accessible aux personnes à mobilité
+                                réduite ?</span>
+                            <span class="faq-item__icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p class="faq-item__answer-text">
+                                Oui, le festival est entièrement accessible aux personnes à mobilité réduite. Des zones
+                                dédiées sont prévues devant chaque scène, des sanitaires adaptés sont disponibles et un
+                                service d'accompagnement gratuit peut être réservé.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Question 6 -->
+                    <article class="faq-item">
+                        <button class="faq-item__button" aria-expanded="false">
+                            <span class="faq-item__question">Peut-on apporter de la nourriture et des boissons ?</span>
+                            <span class="faq-item__icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p class="faq-item__answer-text">
+                                La nourriture solide en petite quantité est autorisée (snacks, sandwichs). Les boissons
+                                alcoolisées et les contenants en verre sont strictement interdits. De nombreux stands de
+                                nourriture et bars sont présents sur le site.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Question 7 -->
+                    <article class="faq-item">
+                        <button class="faq-item__button" aria-expanded="false">
+                            <span class="faq-item__question">Y a-t-il une limite d'âge ?</span>
+                            <span class="faq-item__icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p class="faq-item__answer-text">
+                                Le festival est ouvert à tous les âges. Les mineurs de moins de 16 ans doivent être
+                                accompagnés d'un adulte. Une autorisation parentale est requise pour les 16-18 ans non
+                                accompagnés.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Question 8 -->
+                    <article class="faq-item">
+                        <button class="faq-item__button" aria-expanded="false">
+                            <span class="faq-item__question">Quels moyens de paiement sont acceptés sur le festival
+                                ?</span>
+                            <span class="faq-item__icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-item__answer">
+                            <p class="faq-item__answer-text">
+                                Le festival fonctionne avec un système de cashless : rechargez votre bracelet par carte
+                                bancaire aux bornes sur place ou via l'application mobile. Les espèces ne sont pas
+                                acceptées aux stands.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="index.html" class="footer__logo">
+            <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="footer__logo-img">
+        </a>
+
+        <p class="footer__description">
+            Un festival nocturne immersif où DJs, son et lumière fusionnent pour créer un voyage sensoriel.
+        </p>
+
+        <!-- Section Navigation -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Navigation</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="festival.html" class="footer__link">Le Festival</a>
+                </li>
+                <li class="footer__item">
+                    <a href="programation.html" class="footer__link">Programme</a>
+                </li>
+                <li class="footer__item">
+                    <a href="artiste.html" class="footer__link">Artistes</a>
+                </li>
+                <li class="footer__item">
+                    <a href="scene.html" class="footer__link">Scènes</a>
+                </li>
+                <li class="footer__item">
+                    <a href="info_pratique.html" class="footer__link">Infos Pratiques</a>
+                </li>
+                <li class="footer__item">
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section Informations -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Informations</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="info_pratique.html" class="footer__link">Infos Pratiques</a>
+                </li>
+                <li class="footer__item">
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">CGV</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Mentions légales</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section Réseaux sociaux -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Suivez-nous</h3>
+            <div class="footer__social">
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                    <img src="assets/icons/youtube.svg" alt="YouTube" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="X (Twitter)">
+                    <img src="assets/icons/x-twitter.svg" alt="X (Twitter)" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                    <img src="assets/icons/instagram.svg" alt="Instagram" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                    <img src="assets/icons/facebook.svg" alt="Facebook" class="footer__social-icon">
+                </a>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <p class="footer__copyright">© 2025 Lumimix Festival. Tous droits réservés.</p>
+    </footer>
+
+    <script type="module" src="src/js/script.js"></script>
+    <script type="module" src="src/js/faq.js"></script>
+</body>
+
+</html>

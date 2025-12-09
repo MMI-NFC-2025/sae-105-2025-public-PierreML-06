@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Stage - Artistes - Lumimix</title>
+    <!-- Liens CSS -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Header avec logo et menu hamburger -->
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="header__logo-img">
+        </a>
+
+        <button class="header__menu-toggle" aria-label="Menu" aria-expanded="false">
+            <span class="header__menu-toggle-bar"></span>
+            <span class="header__menu-toggle-bar"></span>
+            <span class="header__menu-toggle-bar"></span>
+        </button>
+    </header>
+
+    <!-- Menu plein écran -->
+    <nav class="menu" id="menu">
+        <div class="menu__header">
+            <a href="index.html" class="menu__logo">
+                <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="menu__logo-img">
+            </a>
+
+            <button class="menu__close" aria-label="Fermer le menu">
+                <span class="menu__close-bar"></span>
+                <span class="menu__close-bar"></span>
+            </button>
+        </div>
+
+        <div class="menu__nav">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="festival.html" class="menu__link" data-page="festival">Le Festival</a>
+                </li>
+                <li class="menu__item">
+                    <a href="programation.html" class="menu__link" data-page="programation">Programme</a>
+                </li>
+                <li class="menu__item">
+                    <a href="artiste.html" class="menu__link" data-page="artiste">Artistes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="scene.html" class="menu__link" data-page="scene">Scènes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="info_pratique.html" class="menu__link" data-page="info_pratique">Infos Pratiques</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contact.html" class="menu__link" data-page="contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenu principal -->
+    <main class="card-scenePage">
+        <!-- Lien retour déplacé sous le header -->
+        <a href="scene.html" class="card-scenePage__back">
+            <svg class="card-scenePage__back-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m15 18-6-6 6-6" />
+            </svg>
+            <span class="card-scenePage__back-text">Retour aux scènes</span>
+        </a>
+
+        <!-- Hero section avec image de scène -->
+        <section class="card-scenePage__hero">
+            <img src="/placeholder.svg?height=1080&width=1920" alt="" class="card-scenePage__hero-bg">
+            <div class="card-scenePage__hero-overlay"></div>
+            <div class="card-scenePage__hero-content">
+                <h1 class="card-scenePage__hero-title">Main Stage</h1>
+                <div class="card-scenePage__hero-capacity">
+                    <svg class="card-scenePage__hero-capacity-icon" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span class="card-scenePage__hero-capacity-text">15000 personnes</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ajout section À propos de la scène -->
+        <section class="card-scenePage__about">
+            <h2 class="card-scenePage__about-title">À propos de la scène</h2>
+            <p class="card-scenePage__about-description">
+                La scène principale du festival, équipée d'un système son de pointe et d'une scénographie lumineuse
+                spectaculaire avec drones synchronisés et lasers.
+            </p>
+
+            <h3 class="card-scenePage__about-subtitle">Caractéristiques techniques</h3>
+            <div class="card-scenePage__features">
+                <div class="card-scenePage__feature">
+                    <svg class="card-scenePage__feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                    <span class="card-scenePage__feature-text">Système L-Acoustics K1</span>
+                </div>
+                <div class="card-scenePage__feature">
+                    <svg class="card-scenePage__feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                    <span class="card-scenePage__feature-text">Écrans LED 4K</span>
+                </div>
+                <div class="card-scenePage__feature">
+                    <svg class="card-scenePage__feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                    <span class="card-scenePage__feature-text">120 lasers RGB</span>
+                </div>
+                <div class="card-scenePage__feature">
+                    <svg class="card-scenePage__feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                    </svg>
+                    <span class="card-scenePage__feature-text">Show de drones</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ajout section Line-up de la scène -->
+        <section class="card-scenePage__lineup">
+            <h2 class="card-scenePage__lineup-title">Line-up de la scène</h2>
+
+            <!-- Vendredi 18 Juillet -->
+            <div class="card-scenePage__lineup-day">
+                <h3 class="card-scenePage__lineup-day-title">
+                    <svg class="card-scenePage__lineup-day-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Vendredi 18 Juillet
+                </h3>
+
+                <div class="card-scenePage__lineup-grid">
+                    <article class="card-scenePage__artist-card">
+                        <img src="/placeholder.svg?height=400&width=300" alt="Charlotte de Witte"
+                            class="card-scenePage__artist-card-img">
+                        <div class="card-scenePage__artist-card-content">
+                            <h4 class="card-scenePage__artist-card-name">Charlotte de Witte</h4>
+                            <p class="card-scenePage__artist-card-genre">Techno</p>
+                            <p class="card-scenePage__artist-card-time">23:00 - 01:00</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Samedi 19 Juillet -->
+            <div class="card-scenePage__lineup-day">
+                <h3 class="card-scenePage__lineup-day-title">
+                    <svg class="card-scenePage__lineup-day-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Samedi 19 Juillet
+                </h3>
+
+                <div class="card-scenePage__lineup-grid">
+                    <article class="card-scenePage__artist-card">
+                        <img src="/placeholder.svg?height=400&width=300" alt="Amelie Lens"
+                            class="card-scenePage__artist-card-img">
+                        <div class="card-scenePage__artist-card-content">
+                            <h4 class="card-scenePage__artist-card-name">Amelie Lens</h4>
+                            <p class="card-scenePage__artist-card-genre">Techno</p>
+                            <p class="card-scenePage__artist-card-time">00:00 - 02:00</p>
+                        </div>
+                    </article>
+
+                    <article class="card-scenePage__artist-card">
+                        <img src="/placeholder.svg?height=400&width=300" alt="Nina Kraviz"
+                            class="card-scenePage__artist-card-img">
+                        <div class="card-scenePage__artist-card-content">
+                            <h4 class="card-scenePage__artist-card-name">Nina Kraviz</h4>
+                            <p class="card-scenePage__artist-card-genre">Techno / House</p>
+                            <p class="card-scenePage__artist-card-time">22:00 - 00:00</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Dimanche 20 Juillet -->
+            <div class="card-scenePage__lineup-day">
+                <h3 class="card-scenePage__lineup-day-title">
+                    <svg class="card-scenePage__lineup-day-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    Dimanche 20 Juillet
+                </h3>
+
+                <div class="card-scenePage__lineup-grid">
+                    <article class="card-scenePage__artist-card">
+                        <img src="/placeholder.svg?height=400&width=300" alt="Maceo Plex"
+                            class="card-scenePage__artist-card-img">
+                        <div class="card-scenePage__artist-card-content">
+                            <h4 class="card-scenePage__artist-card-name">Maceo Plex</h4>
+                            <p class="card-scenePage__artist-card-genre">Techno / House</p>
+                            <p class="card-scenePage__artist-card-time">23:00 - 01:30</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ajout section Informations pratiques -->
+        <section class="card-scenePage__info">
+            <h2 class="card-scenePage__info-title">Informations pratiques</h2>
+
+            <div class="card-scenePage__info-content">
+                <div class="card-scenePage__info-item">
+                    <h3 class="card-scenePage__info-label">Capacité</h3>
+                    <p class="card-scenePage__info-value">15000 personnes</p>
+                </div>
+
+                <div class="card-scenePage__info-item">
+                    <h3 class="card-scenePage__info-label">Nombre d'artistes</h3>
+                    <p class="card-scenePage__info-value">4 artistes</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="index.html" class="footer__logo">
+            <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="footer__logo-img">
+        </a>
+
+        <p class="footer__description">
+            Un festival nocturne immersif où DJs, son et lumière fusionnent pour créer un voyage sensoriel.
+        </p>
+
+        <!-- Section Navigation -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Navigation</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="festival.html" class="footer__link">Le Festival</a>
+                </li>
+                <li class="footer__item">
+                    <a href="programation.html" class="footer__link">Programme</a>
+                </li>
+                <li class="footer__item">
+                    <a href="artiste.html" class="footer__link">Artistes</a>
+                </li>
+                <li class="footer__item">
+                    <a href="scene.html" class="footer__link">Scènes</a>
+                </li>
+                <li class="footer__item">
+                    <a href="info_pratique.html" class="footer__link">Infos Pratiques</a>
+                </li>
+                <li class="footer__item">
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section Informations -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Informations</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="info_pratique.html" class="footer__link">Infos Pratiques</a>
+                </li>
+                <li class="footer__item">
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">CGV</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Mentions légales</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section Réseaux sociaux -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Suivez-nous</h3>
+            <div class="footer__social">
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                    <img src="assets/icons/youtube.svg" alt="YouTube" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="X (Twitter)">
+                    <img src="assets/icons/x-twitter.svg" alt="X (Twitter)" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                    <img src="assets/icons/instagram.svg" alt="Instagram" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                    <img src="assets/icons/facebook.svg" alt="Facebook" class="footer__social-icon">
+                </a>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <p class="footer__copyright">© 2025 Lumimix Festival. Tous droits réservés.</p>
+    </footer>
+
+    <script type="module" src="src/js/script.js"></script>
+</body>
+
+</html>

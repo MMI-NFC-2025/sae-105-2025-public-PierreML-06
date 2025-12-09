@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Lumimix</title>
+    <!-- Liens CSS -->
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Header avec logo et menu hamburger -->
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="header__logo-img">
+        </a>
+
+        <button class="header__menu-toggle" aria-label="Menu" aria-expanded="false">
+            <span class="header__menu-toggle-bar"></span>
+            <span class="header__menu-toggle-bar"></span>
+            <span class="header__menu-toggle-bar"></span>
+        </button>
+    </header>
+
+    <!-- Menu plein écran -->
+    <nav class="menu" id="menu">
+        <div class="menu__header">
+            <a href="index.html" class="menu__logo">
+                <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="menu__logo-img">
+            </a>
+
+            <button class="menu__close" aria-label="Fermer le menu">
+                <span class="menu__close-bar"></span>
+                <span class="menu__close-bar"></span>
+            </button>
+        </div>
+
+        <div class="menu__nav">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="festival.html" class="menu__link" data-page="festival">Le Festival</a>
+                </li>
+                <li class="menu__item">
+                    <a href="programation.html" class="menu__link" data-page="programation">Programme</a>
+                </li>
+                <li class="menu__item">
+                    <a href="artiste.html" class="menu__link" data-page="artiste">Artistes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="scene.html" class="menu__link" data-page="scene">Scènes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="info_pratique.html" class="menu__link" data-page="info_pratique">Infos Pratiques</a>
+                </li>
+                <li class="menu__item">
+                    <a href="contact.html" class="menu__link" data-page="contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <main>
+        <section class="hero">
+            <img src="/placeholder.svg?height=1080&width=1920" alt="" class="hero__bg">
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <h1 class="hero__title">Contact</h1>
+                <p class="hero__subtitle">Une question ? N'hésitez pas à nous contacter</p>
+            </div>
+        </section>
+
+        <!-- Ajout du formulaire de contact -->
+        <section class="contact-form">
+            <h2 class="contact-form__title">Envoyez-nous un message</h2>
+
+            <form action="#" method="POST">
+                <div class="contact-form__group">
+                    <label for="nom" class="contact-form__label">Nom complet</label>
+                    <input type="text" id="nom" name="nom" class="contact-form__input" placeholder="Votre nom" required>
+                </div>
+
+                <div class="contact-form__group">
+                    <label for="email" class="contact-form__label">Email</label>
+                    <input type="email" id="email" name="email" class="contact-form__input"
+                        placeholder="votre@email.com" required>
+                </div>
+
+                <div class="contact-form__group">
+                    <label for="sujet" class="contact-form__label">Sujet</label>
+                    <input type="text" id="sujet" name="sujet" class="contact-form__input" required>
+                </div>
+
+                <div class="contact-form__group">
+                    <label for="message" class="contact-form__label">Message</label>
+                    <textarea id="message" name="message" class="contact-form__textarea" placeholder="Votre message..."
+                        required></textarea>
+                </div>
+
+                <button type="submit" class="contact-form__button">
+                    <img src="assets/icons/send.svg" alt="" class="contact-form__button-icon">
+                    Envoyer le message
+                </button>
+            </form>
+        </section>
+
+        <!-- Ajout de la section Informations de contact -->
+        <section class="contact-info">
+            <h2 class="contact-info__title">Informations de contact</h2>
+
+            <div class="contact-info__grid">
+                <!-- Carte Email -->
+                <div class="contact-info__card">
+                    <img src="assets/icons/mail.svg" alt="" class="contact-info__icon">
+                    <div class="contact-info__content">
+                        <h3 class="contact-info__subtitle">Email</h3>
+                        <p class="contact-info__text">contact@lumimix-festival.fr</p>
+                        <p class="contact-info__detail">Réponse sous 48h</p>
+                    </div>
+                </div>
+
+                <!-- Carte Téléphone -->
+                <div class="contact-info__card">
+                    <img src="assets/icons/phone.svg" alt="" class="contact-info__icon">
+                    <div class="contact-info__content">
+                        <h3 class="contact-info__subtitle">Téléphone</h3>
+                        <p class="contact-info__text">+33 3 84 22 00 00</p>
+                        <p class="contact-info__detail">Lun-Ven : 9h-18h</p>
+                    </div>
+                </div>
+
+                <!-- Carte Adresse -->
+                <div class="contact-info__card">
+                    <img src="assets/icons/location.svg" alt="" class="contact-info__icon">
+                    <div class="contact-info__content">
+                        <h3 class="contact-info__subtitle">Adresse</h3>
+                        <p class="contact-info__text">Lumimix Festival</p>
+                        <p class="contact-info__text">Base de loisirs du Malsaucy</p>
+                        <p class="contact-info__text">90300 Sermamagny, France</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Suivez-nous -->
+            <div class="contact-social">
+                <h2 class="contact-social__title">Suivez-nous</h2>
+
+                <div class="contact-social__grid">
+                    <a href="#" class="contact-social__link" aria-label="Facebook">
+                        <img src="assets/icons/facebook.svg" alt="" class="contact-social__icon">
+                    </a>
+                    <a href="#" class="contact-social__link" aria-label="Instagram">
+                        <img src="assets/icons/instagram.svg" alt="" class="contact-social__icon">
+                    </a>
+                    <a href="#" class="contact-social__link" aria-label="Twitter">
+                        <img src="assets/icons/x-twitter.svg" alt="" class="contact-social__icon">
+                    </a>
+                    <a href="#" class="contact-social__link" aria-label="YouTube">
+                        <img src="assets/icons/youtube.svg" alt="" class="contact-social__icon">
+                    </a>
+                </div>
+
+                <!-- Box partenariat -->
+                <div class="contact-partnership">
+                    <p class="contact-partnership__text">Pour toute demande de partenariat ou de collaboration, merci
+                        d'utiliser l'adresse :</p>
+                    <a href="mailto:partenariats@lumimix-festival.fr"
+                        class="contact-partnership__email">partenariats@lumimix-festival.fr</a>
+                </div>
+            </div>
+
+            <!-- Ajout de la section Espace Presse -->
+            <section class="press-section">
+                <h2 class="press-section__title">Espace Presse</h2>
+                <p class="press-section__subtitle">Vous êtes journaliste ou média et souhaitez couvrir le festival
+                    Lumimix ?</p>
+
+                <div class="press-section__buttons">
+                    <a href="#" class="button button--press-secondary">Télécharger le dossier de presse</a>
+                    <a href="#" class="button button--primary">Accréditation presse</a>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="index.html" class="footer__logo">
+            <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="footer__logo-img">
+        </a>
+
+        <p class="footer__description">
+            Un festival nocturne immersif où DJs, son et lumière fusionnent pour créer un voyage sensoriel.
+        </p>
+
+        <!-- Section Navigation -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Navigation</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="festival.html" class="footer__link">Le Festival</a>
+                </li>
+                <li class="footer__item">
+                    <a href="programation.html" class="footer__link">Programme</a>
+                </li>
+                <li class="footer__item">
+                    <a href="artiste.html" class="footer__link">Artistes</a>
+                </li>
+                <li class="footer__item">
+                    <a href="scene.html" class="footer__link">Scènes</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section Informations -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Informations</h3>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="info_pratique.html" class="footer__link">Infos Pratiques</a>
+                </li>
+                <li class="footer__item">
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">CGV</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Mentions légales</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Section Réseaux sociaux -->
+        <section class="footer__section">
+            <h3 class="footer__section-title">Suivez-nous</h3>
+            <div class="footer__social">
+                <a href="#" class="footer__social-link" aria-label="YouTube">
+                    <img src="assets/icons/youtube.svg" alt="YouTube" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="X (Twitter)">
+                    <img src="assets/icons/x-twitter.svg" alt="X (Twitter)" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Instagram">
+                    <img src="assets/icons/instagram.svg" alt="Instagram" class="footer__social-icon">
+                </a>
+                <a href="#" class="footer__social-link" aria-label="Facebook">
+                    <img src="assets/icons/facebook.svg" alt="Facebook" class="footer__social-icon">
+                </a>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <p class="footer__copyright">© 2025 Lumimix Festival. Tous droits réservés.</p>
+    </footer>
+
+    <script type="module" src="src/js/script.js"></script>
+</body>
+
+</html>
