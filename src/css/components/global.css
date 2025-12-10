@@ -1,0 +1,299 @@
+/* Styles globaux pour les sections répétées - Section Nos Valeurs */
+
+.values-section {
+    padding: 3rem 1.5rem;
+    background-color: var(--color-dark-blue);
+}
+
+.values-section__title {
+    font-size: var(--fs-h1);
+    font-weight: var(--weight-blod);
+    line-height: var(--line-height-1);
+    text-align: center;
+    margin: 0 0 3rem 0;
+    background: var(--gradient-3C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.values-section__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Card de valeur */
+.value-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem 1.5rem;
+}
+
+.value-card__icon-wrapper {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.value-card__icon-wrapper--violet {
+    background-color: var(--color-violet);
+}
+
+.value-card__icon-wrapper--pink {
+    background: var(--gradient-RR);
+}
+
+.value-card__icon-wrapper--blue {
+    background: var(--gradient-BB);
+}
+
+.value-card__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+}
+
+.value-card__title {
+    font-size: var(--fs-h2);
+    font-weight: var(--weight-blod);
+    line-height: var(--line-height-1);
+    color: var(--color-white);
+    margin: 0;
+}
+
+.value-card__description {
+    font-size: var(--fs-body-1);
+    font-weight: var(--weight-regular);
+    line-height: var(--line-height-2);
+    color: var(--color-gris);
+    margin: 0;
+}
+
+/* Styles globaux pour les sections d'informations de contact */
+
+.contact-info {
+    padding: 3rem 1.5rem;
+    background-color: #000000;
+}
+
+.contact-info__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #b794f6 0%, #ec4899 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 2rem;
+}
+
+.contact-info__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.contact-info__card {
+    background: rgba(30, 58, 79, 0.5);
+    border: 0.0625rem solid rgba(139, 92, 246, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.contact-info__icon {
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+}
+
+.contact-info__content {
+    flex: 1;
+}
+
+.contact-info__subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info__text {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 0.25rem;
+}
+
+.contact-info__detail {
+    font-size: 0.95rem;
+    color: #9ca3af;
+}
+
+/* Section Suivez-nous */
+.contact-social {
+    margin-bottom: 2rem;
+}
+
+.contact-social__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.contact-social__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-social__link {
+    background: rgba(30, 58, 79, 0.5);
+    border: 0.0625rem solid rgba(139, 92, 246, 0.3);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.contact-social__link:hover {
+    background: rgba(139, 92, 246, 0.2);
+    border-color: rgba(139, 92, 246, 0.6);
+    transform: translateY(-0.125rem);
+}
+
+.contact-social__icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* Section partenariat */
+.contact-partnership {
+    background: rgba(88, 28, 135, 0.3);
+    border: 0.0625rem solid rgba(139, 92, 246, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.contact-partnership__text {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.contact-partnership__email {
+    font-size: 1.1rem;
+    color: #b794f6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-partnership__email:hover {
+    color: #ec4899;
+}
+
+/* Section Espace Presse */
+.press-section {
+    padding: 3rem 1.5rem;
+    background-color: #000000;
+    text-align: center;
+}
+
+.press-section__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #b794f6 0%, #ec4899 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.press-section__subtitle {
+    font-size: 1.1rem;
+    color: #d1d5db;
+    margin-bottom: 2.5rem;
+    max-width: 37.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.press-section__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 43.75rem;
+    margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 48rem) {
+    .contact-social__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Styles pour la section À Propos */
+.a-propos {
+    padding: 4rem 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.a-propos__title {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #c27aff 0%, #ff00ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 2rem;
+}
+
+.a-propos__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.a-propos__text {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #cad5e2;
+    margin-bottom: 1rem;
+}
+
+.a-propos__text:last-of-type {
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 48rem) {
+    .a-propos {
+        padding: 6rem 3rem;
+    }
+
+    .a-propos__title {
+        font-size: 4rem;
+    }
+
+    .a-propos__text {
+        font-size: 1.25rem;
+    }
+}

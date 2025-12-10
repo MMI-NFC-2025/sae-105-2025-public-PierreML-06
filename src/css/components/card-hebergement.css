@@ -1,0 +1,127 @@
+/* Carte de scène - Méthodologie BEM */
+
+.scene-card {
+    background-color: rgba(15, 23, 42, 0.8);
+    border: 1px solid var(--primary-color);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.scene-card:hover {
+    transform: translateY(-0.5rem);
+    border-color: var(--secondary-color);
+}
+
+.scene-card__image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
+}
+
+.scene-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.scene-card__content {
+    padding: 2rem;
+}
+
+.scene-card__title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0 0 1.5rem 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.scene-card__description {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin: 0 0 1.5rem 0;
+}
+
+.scene-card__capacity {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.scene-card__capacity-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--primary-color);
+}
+
+.scene-card__capacity-text {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+}
+
+.scene-card__features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.scene-card__feature {
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(139, 92, 246, 0.2);
+    border: 1px solid var(--primary-color);
+    border-radius: 3.125rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.scene-card__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.scene-card__link:hover {
+    color: var(--secondary-color);
+}
+
+.scene-card__link-icon {
+    font-size: 1.25rem;
+}
+
+/* Section conteneur des cartes */
+.scenes-section {
+    padding: 4rem 2rem;
+    max-width: 87.5rem;
+    margin: 0 auto;
+}
+
+.scenes-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+@media (min-width: 48rem) {
+    .scenes-section {
+        padding: 6rem 3rem;
+    }
+}
+
+@media (min-width: 64rem) {
+    .scene-card__image-wrapper {
+        height: 28.125rem;
+    }
+}

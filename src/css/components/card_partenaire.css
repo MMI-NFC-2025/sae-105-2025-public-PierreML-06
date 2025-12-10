@@ -1,0 +1,61 @@
+/* Section Nos Partenaires */
+.partners-section {
+    background-color: var(--color-black);
+    padding: 2rem 1.5rem;
+}
+
+.partners-section__title {
+    font-family: var(--typo-roboto);
+    font-size: var(--fs-h2);
+    font-weight: var(--weight-bold);
+    line-height: var(--line-height-1);
+    background: var(--gradient-3C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: left;
+    margin: 0 0 2rem 0;
+}
+
+/* Grille des cartes partenaires */
+.partners-section__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Carte partenaire */
+.card-partenaire {
+    background-color: var(--color-dark-blue);
+    border: 1px solid var(--color-violet-foncer);
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    min-height: 12.5rem;
+}
+
+/* Logo du partenaire */
+.card-partenaire__logo {
+    max-width: 7.5rem;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Nom du partenaire */
+.card-partenaire__name {
+    font-family: var(--typo-roboto);
+    font-size: var(--fs-body-1);
+    font-weight: var(--weight-regular);
+    line-height: var(--line-height-2);
+    color: var(--color-gris);
+    margin: 0;
+}

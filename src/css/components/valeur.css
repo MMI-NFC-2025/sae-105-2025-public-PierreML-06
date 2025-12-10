@@ -1,0 +1,103 @@
+/* ========================================
+   Valeurs Section - BEM Methodology
+   ======================================== */
+
+.valeur {
+    padding: 6rem 2rem;
+    background-color: var(--color-background);
+}
+
+.valeur__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    background: linear-gradient(135deg, #c27aff, #fb64b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 4rem;
+}
+
+.valeur__grid {
+    max-width: 50rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Card styles */
+.valeur__card {
+    background-color: rgba(29, 41, 61, 0.6);
+    border: 0.0625rem solid rgba(173, 70, 255, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.valeur__card:hover {
+    border-color: rgba(173, 70, 255, 0.6);
+    transform: translateY(-0.25rem);
+}
+
+/* Highlighted cards with gradient background */
+.valeur__card--highlight {
+    background: linear-gradient(135deg, rgba(173, 70, 255, 0.3), rgba(194, 122, 255, 0.2));
+    border: 0.0625rem solid rgba(173, 70, 255, 0.5);
+}
+
+.valeur__card--highlight:hover {
+    border-color: rgba(173, 70, 255, 0.8);
+}
+
+.valeur__card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.valeur__icon {
+    width: 3rem;
+    height: 3rem;
+    flex-shrink: 0;
+}
+
+.valeur__card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-text-light);
+    margin: 0;
+}
+
+.valeur__card-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 48rem) {
+    .valeur {
+        padding: 4rem 1.5rem;
+    }
+
+    .valeur__title {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .valeur__card {
+        padding: 1.5rem;
+    }
+
+    .valeur__card-title {
+        font-size: 1.25rem;
+    }
+
+    .valeur__icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}

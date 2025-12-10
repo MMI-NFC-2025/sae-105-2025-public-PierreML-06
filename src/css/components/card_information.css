@@ -1,0 +1,49 @@
+/* Composant Card Information - BEM */
+
+.card-information {
+    background-color: var(--color-dark-blue);
+    border: 0.125rem solid var(--color-violet-foncer);
+    border-radius: 1.25rem;
+    /* 20px */
+    padding: 2rem 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-information__icon {
+    width: 4rem;
+    /* 64px */
+    height: 4rem;
+    /* 64px */
+    object-fit: contain;
+}
+
+.card-information__title {
+    font-family: var(--typo-roboto);
+    font-size: var(--fs-h2);
+    font-weight: var(--weight-blod);
+    line-height: var(--line-height-1);
+    color: var(--color-white);
+    margin: 0;
+}
+
+.card-information__subtitle {
+    font-family: var(--typo-roboto);
+    font-size: var(--fs-body-1);
+    font-weight: var(--weight-regular);
+    line-height: var(--line-height-2);
+    color: var(--color-gris);
+    margin: 0;
+}
+
+/* Section conteneur pour les cartes */
+.information-section {
+    background-color: var(--color-black);
+    padding: 2rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}

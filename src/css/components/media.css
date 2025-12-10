@@ -1,0 +1,24 @@
+/* Styles pour les médias (images, vidéos) */
+.media {
+    width: 100%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.media__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .media {
+        border-radius: 2rem;
+    }
+
+    .media__img {
+        border-radius: 2rem;
+    }
+}

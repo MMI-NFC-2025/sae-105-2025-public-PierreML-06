@@ -1,0 +1,441 @@
+/* ===================================
+   Card Artiste Page - BEM
+   =================================== */
+
+/* Bloc principal */
+.card-artistePage {
+    padding-top: 5rem;
+    /* Compensation pour le header fixe */
+    min-height: 100vh;
+}
+
+/* Bouton retour */
+.card-artistePage__back {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.card-artistePage__back:hover {
+    transform: translateX(-0.3125rem);
+    color: var(--color-secondary);
+}
+
+.card-artistePage__back-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke-width: 2.5;
+}
+
+.card-artistePage__back-text {
+    font-family: var(--font-secondary);
+}
+
+/* Hero section */
+.card-artistePage__hero {
+    position: relative;
+    height: 70vh;
+    min-height: 37.5rem;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+
+.card-artistePage__hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.card-artistePage__hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(2, 6, 24, 0.95) 0%, rgba(2, 6, 24, 0.7) 50%, rgba(2, 6, 24, 0.3) 100%);
+    z-index: 2;
+}
+
+.card-artistePage__hero-content {
+    position: relative;
+    z-index: 3;
+    padding: 2rem 1.5rem 3rem;
+    width: 100%;
+}
+
+/* Badge genre */
+.card-artistePage__hero-genre {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    color: var(--color-white);
+    border-radius: 3.125rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-secondary);
+}
+
+/* Titre artiste */
+.card-artistePage__hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin: 0 0 2rem 0;
+    line-height: 1.1;
+    font-family: var(--font-secondary);
+}
+
+/* Informations (date, heure, lieu) */
+.card-artistePage__hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-artistePage__hero-info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.card-artistePage__hero-info-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+}
+
+.card-artistePage__hero-info-icon--purple {
+    color: var(--color-primary);
+}
+
+.card-artistePage__hero-info-icon--pink {
+    color: var(--color-secondary);
+}
+
+.card-artistePage__hero-info-icon--blue {
+    color: #51a2ff;
+}
+
+.card-artistePage__hero-info-text {
+    font-size: 1.125rem;
+    color: var(--color-white);
+    font-weight: 500;
+    font-family: var(--font-secondary);
+}
+
+/* Responsive - Tablette */
+@media (min-width: 48rem) {
+    .card-artistePage__back {
+        padding: 1.5rem 2rem;
+        font-size: 1.25rem;
+    }
+
+    .card-artistePage__hero {
+        height: 80vh;
+    }
+
+    .card-artistePage__hero-content {
+        padding: 2rem 2rem 4rem;
+    }
+
+    .card-artistePage__hero-genre {
+        font-size: 1.125rem;
+        padding: 0.875rem 2rem;
+    }
+
+    .card-artistePage__hero-title {
+        font-size: 4.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .card-artistePage__hero-info {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .card-artistePage__hero-info-icon {
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+
+    .card-artistePage__hero-info-text {
+        font-size: 1.25rem;
+    }
+}
+
+/* Responsive - Desktop */
+@media (min-width: 64rem) {
+    .card-artistePage__back {
+        padding: 1.5rem 3rem;
+    }
+
+    .card-artistePage__hero-content {
+        padding: 3rem 3rem 5rem;
+        max-width: 87.5rem;
+        margin: 0 auto;
+    }
+
+    .card-artistePage__hero-title {
+        font-size: 5.5rem;
+    }
+
+    .card-artistePage__hero-info {
+        gap: 3rem;
+    }
+}
+
+/* Ajout des styles pour la section À propos */
+/* Section À propos */
+.card-artistePage__about {
+    padding: 0 1.5rem 3rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.card-artistePage__about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 1.5rem 0;
+    font-family: var(--font-secondary);
+}
+
+.card-artistePage__about-text {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--color-white);
+    margin: 0;
+    font-family: var(--font-primary);
+}
+
+/* Responsive - Tablette */
+@media (min-width: 48rem) {
+    .card-artistePage__about {
+        padding: 0 2rem 4rem;
+    }
+
+    .card-artistePage__about-title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .card-artistePage__about-text {
+        font-size: 1.25rem;
+    }
+}
+
+/* Responsive - Desktop */
+@media (min-width: 64rem) {
+    .card-artistePage__about {
+        padding: 0 3rem 5rem;
+    }
+
+    .card-artistePage__about-title {
+        font-size: 3.5rem;
+    }
+
+    .card-artistePage__about-text {
+        font-size: 1.375rem;
+    }
+}
+
+/* Ajout des styles pour la section Galerie */
+/* Section Galerie */
+.card-artistePage__gallery {
+    padding: 3rem 1.5rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.card-artistePage__gallery-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0 0 2rem 0;
+    font-family: var(--font-secondary);
+}
+
+.card-artistePage__gallery-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card-artistePage__gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card-artistePage__gallery-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0.625rem 1.875rem rgba(194, 122, 255, 0.3);
+}
+
+/* Responsive - Tablette */
+@media (min-width: 48rem) {
+    .card-artistePage__gallery {
+        padding: 4rem 2rem;
+    }
+
+    .card-artistePage__gallery-title {
+        font-size: 3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .card-artistePage__gallery-grid {
+        gap: 2rem;
+    }
+
+    .card-artistePage__gallery-img {
+        border-radius: 1.5rem;
+    }
+}
+
+/* Responsive - Desktop */
+@media (min-width: 64rem) {
+    .card-artistePage__gallery {
+        padding: 5rem 3rem;
+    }
+
+    .card-artistePage__gallery-title {
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .card-artistePage__gallery-grid {
+        gap: 2.5rem;
+    }
+}
+
+/* Ajout des styles pour la section Informations de la performance */
+/* Section Informations de la performance */
+.card-artistePage__performance {
+    padding: 3rem 1.5rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.card-artistePage__performance-card {
+    background: rgba(29, 41, 61, 0.5);
+    border: 1px solid rgba(194, 122, 255, 0.2);
+    border-radius: 1.5rem;
+    padding: 2.5rem 2rem;
+    backdrop-filter: blur(0.625rem);
+}
+
+.card-artistePage__performance-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin: 0 0 2rem 0;
+    font-family: var(--font-secondary);
+}
+
+.card-artistePage__performance-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-artistePage__performance-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-artistePage__performance-label {
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    font-weight: 400;
+    font-family: var(--font-primary);
+}
+
+.card-artistePage__performance-value {
+    font-size: 1.25rem;
+    color: var(--color-white);
+    font-weight: 600;
+    font-family: var(--font-secondary);
+}
+
+.card-artistePage__performance-value--purple {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Responsive - Tablette */
+@media (min-width: 48rem) {
+    .card-artistePage__performance {
+        padding: 4rem 2rem;
+    }
+
+    .card-artistePage__performance-card {
+        padding: 3rem 2.5rem;
+    }
+
+    .card-artistePage__performance-title {
+        font-size: 2.25rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .card-artistePage__performance-grid {
+        gap: 2.5rem;
+    }
+
+    .card-artistePage__performance-label {
+        font-size: 1.125rem;
+    }
+
+    .card-artistePage__performance-value {
+        font-size: 1.5rem;
+    }
+}
+
+/* Responsive - Desktop */
+@media (min-width: 64rem) {
+    .card-artistePage__performance {
+        padding: 5rem 3rem;
+    }
+
+    .card-artistePage__performance-card {
+        padding: 3.5rem 3rem;
+    }
+
+    .card-artistePage__performance-title {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .card-artistePage__performance-grid {
+        gap: 3rem;
+    }
+
+    .card-artistePage__performance-value {
+        font-size: 1.625rem;
+    }
+}

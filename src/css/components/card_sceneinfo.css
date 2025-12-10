@@ -1,0 +1,128 @@
+/* Composant card-sceneinfo - Cartes d'information des scènes */
+
+/* Section principale */
+.scene-info-section {
+    padding: 4rem 2rem;
+    background-color: var(--background-color);
+}
+
+.scene-info-section__title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 3rem;
+}
+
+/* Conteneur des cartes */
+.scene-info-grid {
+    max-width: 37.5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Carte d'information */
+.scene-info-card {
+    background: rgba(30, 41, 59, 0.5);
+    border: 0.125rem solid rgba(139, 92, 246, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.scene-info-card:hover {
+    border-color: rgba(139, 92, 246, 0.6);
+    transform: translateY(-0.25rem);
+}
+
+/* Titre de la carte */
+.scene-info-card__title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+/* Section capacité */
+.scene-info-card__capacity-label {
+    font-size: 0.875rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.scene-info-card__capacity-value {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #a855f7;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+/* Section points forts */
+.scene-info-card__features-label {
+    font-size: 0.875rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* Liste des points forts */
+.scene-info-card__features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.scene-info-card__feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #e2e8f0;
+    font-size: 1rem;
+}
+
+/* Bullet point violet */
+.scene-info-card__feature-item::before {
+    content: "";
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #a855f7;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* Responsive */
+@media (min-width: 48rem) {
+    .scene-info-section {
+        padding: 5rem 2rem;
+    }
+
+    .scene-info-section__title {
+        font-size: 3rem;
+    }
+
+    .scene-info-grid {
+        max-width: 43.75rem;
+    }
+
+    .scene-info-card {
+        padding: 2.5rem;
+    }
+
+    .scene-info-card__title {
+        font-size: 2rem;
+    }
+}

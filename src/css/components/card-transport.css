@@ -1,0 +1,134 @@
+/* Composant Card Transport */
+/* Méthodologie BEM pour les cartes de transport et d'accès */
+
+.transport {
+    padding: 4rem 2rem;
+    background: var(--bg-primary);
+}
+
+.transport__container {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.transport__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.transport__icon {
+    width: 3rem;
+    height: 3rem;
+    filter: brightness(0) saturate(100%) invert(72%) sepia(37%) saturate(1707%) hue-rotate(225deg) brightness(102%) contrast(101%);
+}
+
+.transport__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.transport__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Card Transport Basique */
+.card-transport {
+    background: rgba(29, 41, 61, 0.5);
+    border: 0.0625rem solid var(--accent-primary);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.card-transport:hover {
+    transform: translateY(-0.25rem);
+    border-color: var(--accent-secondary);
+    box-shadow: 0 0.5rem 1.5rem rgba(194, 122, 255, 0.2);
+}
+
+.card-transport__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-transport__icon {
+    width: 2rem;
+    height: 2rem;
+    filter: brightness(0) saturate(100%) invert(72%) sepia(37%) saturate(1707%) hue-rotate(225deg) brightness(102%) contrast(101%);
+}
+
+.card-transport__title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.card-transport__routes {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.card-transport__route {
+    color: var(--text-primary);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
+
+.card-transport__note {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Card Transport Covoiturage (version avec gradient) */
+.card-transport--covoiturage {
+    background: var(--gradient-primary);
+    border: 0.125rem solid var(--accent-primary);
+    box-shadow: 0 0.625rem 2.5rem rgba(194, 122, 255, 0.3);
+}
+
+.card-transport--covoiturage:hover {
+    box-shadow: 0 0.75rem 3rem rgba(194, 122, 255, 0.4);
+}
+
+/* Card Adresse */
+.card-transport--adresse {
+    background: rgba(29, 41, 61, 0.5);
+    border: 0.0625rem solid var(--accent-primary);
+}
+
+.card-transport--adresse .card-transport__title {
+    margin-bottom: 1rem;
+}
+
+.card-transport__address {
+    color: var(--text-primary);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.card-transport__address-line {
+    margin-bottom: 0.25rem;
+}
+
+/* Responsive */
+@media (min-width: 48rem) {
+    .transport {
+        padding: 5rem 2rem;
+    }
+
+    .transport__title {
+        font-size: 3rem;
+    }
+}
