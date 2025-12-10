@@ -84,13 +84,13 @@
 
 .contact-info {
     padding: 3rem 1.5rem;
-    background-color: #000000;
+    background-color: var(--color-dark-blue);
 }
 
 .contact-info__title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, #b794f6 0%, #ec4899 100%);
+    font-size: var(--fs-h2);
+    font-weight: var(--weight-blod);
+    background: var(--gradient-2C);
     background-clip: text;
     color: transparent;
     margin-bottom: 2rem;
@@ -104,8 +104,8 @@
 }
 
 .contact-info__card {
-    background: rgba(30, 58, 79, 0.5);
-    border: 0.0625rem solid rgba(139, 92, 246, 0.3);
+    background: var(--color-dark-blue);
+    border: 0.0625rem solid var(--color-violet-200);
     border-radius: 1rem;
     padding: 2rem;
     display: flex;
@@ -125,20 +125,20 @@
 
 .contact-info__subtitle {
     font-size: 1.5rem;
-    font-weight: 700;
-    color: #ffffff;
+    font-weight: var(--weight-blod);
+    color: var(--color-white);
     margin-bottom: 0.5rem;
 }
 
 .contact-info__text {
-    font-size: 1rem;
-    color: #ffffff;
+    font-size: var(--fs-body-2);
+    color: var(--color-clay);
     margin-bottom: 0.25rem;
 }
 
 .contact-info__detail {
-    font-size: 0.95rem;
-    color: #9ca3af;
+    font-size: var(--fs-body-3);
+    color: var(--color-gris);
 }
 
 /* Section Suivez-nous */
@@ -147,9 +147,9 @@
 }
 
 .contact-social__title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #ffffff;
+    font-size: var(--fs-h2);
+    font-weight: var(--weight-blod);
+    color: var(--color-white);
     margin-bottom: 1.5rem;
 }
 
@@ -161,8 +161,8 @@
 }
 
 .contact-social__link {
-    background: rgba(30, 58, 79, 0.5);
-    border: 0.0625rem solid rgba(139, 92, 246, 0.3);
+    background: var(--color-dark-blue);
+    border: 0.0625rem solid var(--color-violet-200);
     border-radius: 1rem;
     padding: 1.5rem;
     display: flex;
@@ -185,38 +185,38 @@
 }
 
 .contact-partnership__text {
-    font-size: 1rem;
-    color: #ffffff;
+    font-size: var(--fs-body-2);
+    color: var(--color-clay);
     margin-bottom: 0.5rem;
 }
 
 .contact-partnership__email {
-    font-size: 1.1rem;
-    color: #b794f6;
+    font-size: var(--fs-body-2);
+    color: var(--color-violet);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: var(--weight-regular);
     transition: color 0.3s ease;
 }
 
 /* Section Espace Presse */
 .press-section {
     padding: 3rem 1.5rem;
-    background-color: #000000;
+    background-color: var(--color-dark-blue);
     text-align: center;
 }
 
 .press-section__title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, #b794f6 0%, #ec4899 100%);
+    font-size: var(--fs-h2);
+    font-weight: var(--weight-blod);
+    background: var(--gradient-2C);
     background-clip: text;
     color: transparent;
     margin-bottom: 1rem;
 }
 
 .press-section__subtitle {
-    font-size: 1.1rem;
-    color: #d1d5db;
+    font-size: var(--fs-body-2);
+    color: var(--color-clay);
     margin-bottom: 2.5rem;
     max-width: 37.5rem;
     margin-left: auto;
@@ -239,9 +239,9 @@
 }
 
 .a-propos__title {
-    font-size: 3rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, #c27aff 0%, #ff00ff 100%);
+    font-size: var(--fs-h2);
+    font-weight: var(--weight-blod);
+    background: var(--gradient-2C);
     background-clip: text;
     color: transparent;
     margin-bottom: 2rem;
@@ -250,13 +250,13 @@
 .a-propos__content {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .a-propos__text {
-    font-size: 1.125rem;
-    line-height: 1.8;
-    color: #cad5e2;
+    font-size: var(--fs-body-2);
+    line-height: var(--line-height-2);
+    color: var(--color-clay);
     margin-bottom: 1rem;
 }
 
@@ -271,13 +271,12 @@
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    background: linear-gradient(180deg, rgba(28, 31, 60, 0) 0%, rgba(28, 31, 60, 0.5) 100%);
 }
 
 .mission__title {
-    font-size: 3rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, #c27aff 0%, #ff00ff 100%);
+    font-size: var(--fs-h2);
+    font-weight: var(--weight-blod);
+    background: var(--gradient-2C);
     background-clip: text;
     color: transparent;
     margin-bottom: 3rem;
@@ -290,14 +289,16 @@
 }
 
 .mission__text {
-    font-size: 1.25rem;
-    line-height: 1.8;
-    color: #ffffff;
+    font-size: var(--fs-body-1);
+    line-height: var(--line-height-2);
+    color: var(--color-white);
     max-width: 900px;
     margin: 0 auto;
 }
 
 .mission__text--secondary {
-    color: #90a1b9;
-    font-size: 1.125rem;
+    color: var(--color-clay);
+    font-weight: var(--weight-regular);
+    font-size: var(--fs-body-2);
+    line-height: var(--line-height-2);
 }
