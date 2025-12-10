@@ -48,12 +48,6 @@
     transition: all 0.3s ease;
 }
 
-.card-transport:hover {
-    transform: translateY(-0.25rem);
-    border-color: var(--accent-secondary);
-    box-shadow: 0 0.5rem 1.5rem rgba(194, 122, 255, 0.2);
-}
-
 .card-transport__header {
     display: flex;
     align-items: center;
@@ -98,10 +92,6 @@
     box-shadow: 0 0.625rem 2.5rem rgba(194, 122, 255, 0.3);
 }
 
-.card-transport--covoiturage:hover {
-    box-shadow: 0 0.75rem 3rem rgba(194, 122, 255, 0.4);
-}
-
 /* Card Adresse */
 .card-transport--adresse {
     background: rgba(29, 41, 61, 0.5);
@@ -120,15 +110,4 @@
 
 .card-transport__address-line {
     margin-bottom: 0.25rem;
-}
-
-/* Responsive */
-@media (min-width: 48rem) {
-    .transport {
-        padding: 5rem 2rem;
-    }
-
-    .transport__title {
-        font-size: 3rem;
-    }
 }

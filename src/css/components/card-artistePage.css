@@ -22,11 +22,6 @@
     transition: all 0.3s ease;
 }
 
-.card-artistePage__back:hover {
-    transform: translateX(-0.3125rem);
-    color: var(--color-secondary);
-}
-
 .card-artistePage__back-icon {
     width: 1.5rem;
     height: 1.5rem;
@@ -136,68 +131,6 @@
     font-family: var(--font-secondary);
 }
 
-/* Responsive - Tablette */
-@media (min-width: 48rem) {
-    .card-artistePage__back {
-        padding: 1.5rem 2rem;
-        font-size: 1.25rem;
-    }
-
-    .card-artistePage__hero {
-        height: 80vh;
-    }
-
-    .card-artistePage__hero-content {
-        padding: 2rem 2rem 4rem;
-    }
-
-    .card-artistePage__hero-genre {
-        font-size: 1.125rem;
-        padding: 0.875rem 2rem;
-    }
-
-    .card-artistePage__hero-title {
-        font-size: 4.5rem;
-        margin-bottom: 2.5rem;
-    }
-
-    .card-artistePage__hero-info {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 2rem;
-    }
-
-    .card-artistePage__hero-info-icon {
-        width: 1.75rem;
-        height: 1.75rem;
-    }
-
-    .card-artistePage__hero-info-text {
-        font-size: 1.25rem;
-    }
-}
-
-/* Responsive - Desktop */
-@media (min-width: 64rem) {
-    .card-artistePage__back {
-        padding: 1.5rem 3rem;
-    }
-
-    .card-artistePage__hero-content {
-        padding: 3rem 3rem 5rem;
-        max-width: 87.5rem;
-        margin: 0 auto;
-    }
-
-    .card-artistePage__hero-title {
-        font-size: 5.5rem;
-    }
-
-    .card-artistePage__hero-info {
-        gap: 3rem;
-    }
-}
-
 /* Ajout des styles pour la section À propos */
 /* Section À propos */
 .card-artistePage__about {
@@ -223,37 +156,6 @@
     color: var(--color-white);
     margin: 0;
     font-family: var(--font-primary);
-}
-
-/* Responsive - Tablette */
-@media (min-width: 48rem) {
-    .card-artistePage__about {
-        padding: 0 2rem 4rem;
-    }
-
-    .card-artistePage__about-title {
-        font-size: 3rem;
-        margin-bottom: 2rem;
-    }
-
-    .card-artistePage__about-text {
-        font-size: 1.25rem;
-    }
-}
-
-/* Responsive - Desktop */
-@media (min-width: 64rem) {
-    .card-artistePage__about {
-        padding: 0 3rem 5rem;
-    }
-
-    .card-artistePage__about-title {
-        font-size: 3.5rem;
-    }
-
-    .card-artistePage__about-text {
-        font-size: 1.375rem;
-    }
 }
 
 /* Ajout des styles pour la section Galerie */
@@ -288,47 +190,6 @@
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-}
-
-.card-artistePage__gallery-img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0.625rem 1.875rem rgba(194, 122, 255, 0.3);
-}
-
-/* Responsive - Tablette */
-@media (min-width: 48rem) {
-    .card-artistePage__gallery {
-        padding: 4rem 2rem;
-    }
-
-    .card-artistePage__gallery-title {
-        font-size: 3rem;
-        margin-bottom: 2.5rem;
-    }
-
-    .card-artistePage__gallery-grid {
-        gap: 2rem;
-    }
-
-    .card-artistePage__gallery-img {
-        border-radius: 1.5rem;
-    }
-}
-
-/* Responsive - Desktop */
-@media (min-width: 64rem) {
-    .card-artistePage__gallery {
-        padding: 5rem 3rem;
-    }
-
-    .card-artistePage__gallery-title {
-        font-size: 3.5rem;
-        margin-bottom: 3rem;
-    }
-
-    .card-artistePage__gallery-grid {
-        gap: 2.5rem;
-    }
 }
 
 /* Ajout des styles pour la section Informations de la performance */
@@ -386,56 +247,4 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-}
-
-/* Responsive - Tablette */
-@media (min-width: 48rem) {
-    .card-artistePage__performance {
-        padding: 4rem 2rem;
-    }
-
-    .card-artistePage__performance-card {
-        padding: 3rem 2.5rem;
-    }
-
-    .card-artistePage__performance-title {
-        font-size: 2.25rem;
-        margin-bottom: 2.5rem;
-    }
-
-    .card-artistePage__performance-grid {
-        gap: 2.5rem;
-    }
-
-    .card-artistePage__performance-label {
-        font-size: 1.125rem;
-    }
-
-    .card-artistePage__performance-value {
-        font-size: 1.5rem;
-    }
-}
-
-/* Responsive - Desktop */
-@media (min-width: 64rem) {
-    .card-artistePage__performance {
-        padding: 5rem 3rem;
-    }
-
-    .card-artistePage__performance-card {
-        padding: 3.5rem 3rem;
-    }
-
-    .card-artistePage__performance-title {
-        font-size: 2.5rem;
-        margin-bottom: 3rem;
-    }
-
-    .card-artistePage__performance-grid {
-        gap: 3rem;
-    }
-
-    .card-artistePage__performance-value {
-        font-size: 1.625rem;
-    }
 }

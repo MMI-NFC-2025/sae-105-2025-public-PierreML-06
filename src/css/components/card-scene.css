@@ -8,11 +8,6 @@
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.scene-card:hover {
-    transform: translateY(-0.5rem);
-    border-color: var(--secondary-color);
-}
-
 .scene-card__image-wrapper {
     position: relative;
     width: 100%;
@@ -93,10 +88,6 @@
     transition: color 0.3s ease;
 }
 
-.scene-card__link:hover {
-    color: var(--secondary-color);
-}
-
 .scene-card__link-icon {
     font-size: 1.25rem;
 }
@@ -112,16 +103,4 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
-}
-
-@media (min-width: 48rem) {
-    .scenes-section {
-        padding: 6rem 3rem;
-    }
-}
-
-@media (min-width: 64rem) {
-    .scene-card__image-wrapper {
-        height: 28.125rem;
-    }
 }

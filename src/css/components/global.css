@@ -172,12 +172,6 @@
     transition: all 0.3s ease;
 }
 
-.contact-social__link:hover {
-    background: rgba(139, 92, 246, 0.2);
-    border-color: rgba(139, 92, 246, 0.6);
-    transform: translateY(-0.125rem);
-}
-
 .contact-social__icon {
     width: 2rem;
     height: 2rem;
@@ -203,10 +197,6 @@
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
-}
-
-.contact-partnership__email:hover {
-    color: #ec4899;
 }
 
 /* Section Espace Presse */
@@ -243,13 +233,6 @@
     margin: 0 auto;
 }
 
-/* Responsive */
-@media (max-width: 48rem) {
-    .contact-social__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 /* Styles pour la section À Propos */
 .a-propos {
     padding: 4rem 2rem;
@@ -282,18 +265,4 @@
 
 .a-propos__text:last-of-type {
     margin-bottom: 3rem;
-}
-
-@media (min-width: 48rem) {
-    .a-propos {
-        padding: 6rem 3rem;
-    }
-
-    .a-propos__title {
-        font-size: 4rem;
-    }
-
-    .a-propos__text {
-        font-size: 1.25rem;
-    }
 }

@@ -89,17 +89,6 @@
     z-index: 1;
 }
 
-/* Overlay sombre au-dessus de l'image pour améliorer la lisibilité */
-.hero-index::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(2, 6, 24, 0.4);
-    z-index: 2;
-}
 
 /* Contenu au-dessus de l'image et de l'overlay */
 .hero-index__content {

@@ -12,13 +12,3 @@
     object-fit: cover;
     border-radius: 1.5rem;
 }
-
-@media (min-width: 768px) {
-    .media {
-        border-radius: 2rem;
-    }
-
-    .media__img {
-        border-radius: 2rem;
-    }
-}

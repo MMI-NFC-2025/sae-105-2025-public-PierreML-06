@@ -59,10 +59,6 @@
     transition: color 0.3s ease;
 }
 
-.footer__link:hover {
-    color: var(--color-white);
-}
-
 /* Section réseaux sociaux */
 .footer__social {
     display: flex;
@@ -79,10 +75,6 @@
     background-color: transparent;
     border-radius: 0.25rem;
     transition: background-color 0.3s ease;
-}
-
-.footer__social-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Utilisation de width/height pour les images au lieu de fill pour SVG */
