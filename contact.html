@@ -8,6 +8,8 @@
     <!-- Liens CSS -->
     <link rel="stylesheet" href="src/css/style.css">
 
+    <script type="module" src="src/js/script.js"></script>
+
     <!-- Favicon et icônes -->
     <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
@@ -75,7 +77,7 @@
     <!-- Hero section -->
     <main>
         <section class="hero">
-            <img src="/placeholder.svg?height=1080&width=1920" alt="" class="hero__bg">
+            <img src="assets/img/cylindre_fond.avif" alt="" class="hero__bg">
             <div class="hero__overlay"></div>
             <div class="hero__content">
                 <h1 class="hero__title">Contact</h1>
@@ -144,7 +146,7 @@
 
                 <!-- Carte Adresse -->
                 <div class="contact-info__card">
-                    <img src="assets/icons/location.svg" alt="" class="contact-info__icon">
+                    <img src="assets/icons/locate_bleu.svg" alt="" class="contact-info__icon">
                     <div class="contact-info__content">
                         <h3 class="contact-info__subtitle">Adresse</h3>
                         <p class="contact-info__text">Lumimix Festival</p>
@@ -166,7 +168,7 @@
                         <img src="assets/icons/instagram.svg" alt="" class="contact-social__icon">
                     </a>
                     <a href="#" class="contact-social__link" aria-label="Twitter">
-                        <img src="assets/icons/x-twitter.svg" alt="" class="contact-social__icon">
+                        <img src="assets/icons/x.svg" alt="" class="contact-social__icon">
                     </a>
                     <a href="#" class="contact-social__link" aria-label="YouTube">
                         <img src="assets/icons/youtube.svg" alt="" class="contact-social__icon">
@@ -248,16 +250,17 @@
         <section class="footer__section">
             <h3 class="footer__section-title">Suivez-nous</h3>
             <div class="footer__social">
-                <a href="#" class="footer__social-link" aria-label="YouTube">
+                <!-- Utilisation d'images SVG depuis assets/icons au lieu de SVG inline -->
+                <a href="https://www.youtube.com/" class="footer__social-link" aria-label="YouTube">
                     <img src="assets/icons/youtube.svg" alt="YouTube" class="footer__social-icon">
                 </a>
-                <a href="#" class="footer__social-link" aria-label="X (Twitter)">
-                    <img src="assets/icons/x-twitter.svg" alt="X (Twitter)" class="footer__social-icon">
+                <a href="https://x.com/?lang=fr" class="footer__social-link" aria-label="X (Twitter)">
+                    <img src="assets/icons/x.svg" alt="X (Twitter)" class="footer__social-icon">
                 </a>
-                <a href="#" class="footer__social-link" aria-label="Instagram">
+                <a href="https://www.instagram.com/" class="footer__social-link" aria-label="Instagram">
                     <img src="assets/icons/instagram.svg" alt="Instagram" class="footer__social-icon">
                 </a>
-                <a href="#" class="footer__social-link" aria-label="Facebook">
+                <a href="https://www.facebook.com/?locale=fr_FR" class="footer__social-link" aria-label="Facebook">
                     <img src="assets/icons/facebook.svg" alt="Facebook" class="footer__social-icon">
                 </a>
             </div>
@@ -266,8 +269,6 @@
         <!-- Copyright -->
         <p class="footer__copyright">© 2025 Lumimix Festival. Tous droits réservés.</p>
     </footer>
-
-    <script type="module" src="src/js/script.js"></script>
 </body>
 
 </html>
