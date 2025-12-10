@@ -8,10 +8,10 @@
 }
 
 .valeur__title {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: var(--fs-h1);
+    font-weight: var(--weight-blod);
     text-align: center;
-    background: linear-gradient(135deg, #c27aff, #fb64b6);
+    background: var(--gradient-2C);
     background-clip: text;
     color: transparent;
     margin-bottom: 4rem;
@@ -27,8 +27,8 @@
 
 /* Card styles */
 .valeur__card {
-    background-color: rgba(29, 41, 61, 0.6);
-    border: 0.0625rem solid rgba(173, 70, 255, 0.3);
+    background-color: var(--color-black-blue);
+    border: 0.0625rem solid var(--color-violet-200);
     border-radius: 1rem;
     padding: 2rem;
     transition: all 0.3s ease;
@@ -36,7 +36,16 @@
 
 /* Highlighted cards with gradient background */
 .valeur__card--highlight {
-    background: linear-gradient(135deg, rgba(173, 70, 255, 0.3), rgba(194, 122, 255, 0.2));
+    background: linear-gradient(90deg,
+            rgba(89, 22, 139, 0.3) 0%,
+            rgba(29, 41, 61, 0.3) 100%);
+    border: 0.0625rem solid rgba(173, 70, 255, 0.5);
+}
+
+.valeur__card--highlight2 {
+    background: linear-gradient(90deg,
+            rgba(134, 16, 67, 0.3) 0%,
+            rgba(29, 41, 61, 0.3) 100%);
     border: 0.0625rem solid rgba(173, 70, 255, 0.5);
 }
 
@@ -54,15 +63,15 @@
 }
 
 .valeur__card-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: var(--color-text-light);
+    font-size: var(--fs-h3);
+    font-weight: var(--weight-semiblod);
+    color: var(--color-white);
     margin: 0;
 }
 
 .valeur__card-description {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: var(--fs-body-2);
+    line-height: var(--line-height-2);
+    color: var(--color-gris);
     margin: 0;
 }

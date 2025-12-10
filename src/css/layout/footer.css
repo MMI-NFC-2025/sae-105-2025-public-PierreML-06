@@ -21,6 +21,7 @@
 .footer__description {
     font-family: var(--font-roboto);
     font-size: var(--fs-body-3);
+    font-weight: var(--weight-regular);
     line-height: var(--line-height-2);
     margin-bottom: 2rem;
     color: var(--color-gris);
@@ -89,6 +90,6 @@
     font-size: var(--fs-body-3);
     color: var(--color-gris);
     padding-top: 1.5rem;
-    border-top: 0.0625rem solid rgba(144, 161, 185, 0.2);
+    border-top: 0.0625rem solid var(--color-gris);
     text-align: left;
 }
