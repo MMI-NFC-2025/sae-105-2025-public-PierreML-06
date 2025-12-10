@@ -158,7 +158,6 @@
 /* Utilisation du gradient 3C au lieu de VV */
 .menu__link--active {
   background: var(--gradient-3C);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
+  color: transparent;
 }

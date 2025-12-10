@@ -11,9 +11,8 @@
     font-size: 2.5rem;
     font-weight: 700;
     background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: transparent;
     margin-bottom: 3rem;
 }
 
@@ -102,27 +101,4 @@
     background-color: #a855f7;
     border-radius: 50%;
     flex-shrink: 0;
-}
-
-/* Responsive */
-@media (min-width: 48rem) {
-    .scene-info-section {
-        padding: 5rem 2rem;
-    }
-
-    .scene-info-section__title {
-        font-size: 3rem;
-    }
-
-    .scene-info-grid {
-        max-width: 43.75rem;
-    }
-
-    .scene-info-card {
-        padding: 2.5rem;
-    }
-
-    .scene-info-card__title {
-        font-size: 2rem;
-    }
 }

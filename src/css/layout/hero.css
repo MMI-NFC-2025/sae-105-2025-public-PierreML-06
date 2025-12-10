@@ -46,10 +46,10 @@
     font-weight: var(--weight-bold);
     line-height: var(--line-height-1);
     margin-bottom: 1.5rem;
+
     background: var(--gradient-VR);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: transparent;
 }
 
 /* Sous-titre */
@@ -98,17 +98,17 @@
     margin: 0 auto;
 }
 
-/* Titre principal avec dégradé */
 .hero-index__title {
     font-family: var(--typo-roboto);
     font-size: 3.75rem;
     font-weight: var(--weight-blod);
     line-height: var(--line-height-1);
     margin-bottom: 1.5rem;
+
+    /* Dégradé standard */
     background: var(--gradient-3C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: transparent;
 }
 
 /* Sous-titre descriptif */

@@ -9,9 +9,8 @@
     font-size: 2.5rem;
     font-weight: 700;
     background: linear-gradient(135deg, #c27aff 0%, #ff4d9e 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: transparent;
     margin-bottom: 3rem;
     line-height: 1.2;
 }

@@ -143,9 +143,8 @@
     font-size: 2.5rem;
     font-weight: 700;
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: transparent;
     margin: 0 0 1.5rem 0;
     font-family: var(--font-secondary);
 }
@@ -170,9 +169,8 @@
     font-size: 2.5rem;
     font-weight: 700;
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: transparent;
     margin: 0 0 2rem 0;
     font-family: var(--font-secondary);
 }
@@ -244,7 +242,6 @@
 
 .card-artistePage__performance-value--purple {
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: transparent;
 }

@@ -118,9 +118,8 @@
     font-size: var(--fs-h2);
     font-weight: var(--weight-blod);
     background: var(--gradient-violet-rose);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: transparent;
     margin: 0 0 1.5rem 0;
 }
 
@@ -187,9 +186,8 @@
     font-size: var(--fs-h2);
     font-weight: var(--weight-blod);
     background: var(--gradient-violet-rose);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: transparent;
     margin: 0 0 3rem 0;
 }
 
@@ -266,9 +264,8 @@
     font-size: var(--fs-body-2);
     font-weight: var(--weight-semiblod);
     background: var(--gradient-violet-rose);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-clip: text;
+    color: transparent;
     margin: 0 0 0.5rem 0;
 }
 
