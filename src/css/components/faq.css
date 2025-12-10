@@ -26,9 +26,6 @@
     font-size: 3rem;
     font-weight: 700;
     background: linear-gradient(135deg, var(--text-gradient-start) 0%, var(--text-gradient-end) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
     margin: 0;
 }
 

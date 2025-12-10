@@ -1,106 +1,115 @@
-/* Carte de scène - Méthodologie BEM */
+/* ===========================
+   Composant : Hébergements
+   Description : Cartes d'hébergements pour le festival
+   Méthodologie : BEM
+   =========================== */
 
-.scene-card {
-    background-color: rgba(15, 23, 42, 0.8);
-    border: 1px solid var(--primary-color);
-    border-radius: 1.5rem;
-    overflow: hidden;
+/* Section hébergements */
+.hebergements {
+    padding: 80px 20px;
+    background-color: var(--color-dark-navy);
+}
+
+.hebergements__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header avec icône et titre */
+.hebergements__header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.hebergements__icon {
+    width: 48px;
+    height: 48px;
+    filter: brightness(0) saturate(100%) invert(68%) sepia(48%) saturate(1821%) hue-rotate(226deg) brightness(102%) contrast(101%);
+}
+
+.hebergements__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-violet);
+}
+
+/* Grille des cartes */
+.hebergements__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Carte d'hébergement */
+.card-hebergement {
+    background: rgba(15, 23, 42, 0.5);
+    border: 2px solid rgba(138, 70, 255, 0.3);
+    border-radius: 20px;
+    padding: 35px;
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.scene-card__image-wrapper {
-    position: relative;
-    width: 100%;
-    height: 25rem;
-    overflow: hidden;
+.card-hebergement:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-primary);
 }
 
-.scene-card__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.card-hebergement__name {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-text-white);
+    margin-bottom: 15px;
 }
 
-.scene-card__content {
-    padding: 2rem;
+.card-hebergement__description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-text-gray);
+    margin-bottom: 20px;
 }
 
-.scene-card__title {
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 0 0 1.5rem 0;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+.card-hebergement__price {
+    font-size: 1.25rem;
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--color-primary-light), var(--color-secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.scene-card__description {
-    font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--text-secondary);
-    margin: 0 0 1.5rem 0;
+/* Carte partenaire (violet) */
+.card-hebergement--partenaire {
+    background: linear-gradient(135deg, rgba(88, 28, 135, 0.4), rgba(109, 40, 217, 0.4));
+    border-color: var(--color-primary);
 }
 
-.scene-card__capacity {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1.5rem;
+.card-hebergement--partenaire .card-hebergement__name {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
 }
 
-.scene-card__capacity-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    color: var(--primary-color);
+.card-hebergement--partenaire .card-hebergement__description {
+    margin-bottom: 25px;
 }
 
-.scene-card__capacity-text {
-    font-size: 1.125rem;
-    color: var(--text-secondary);
+.card-hebergement__hotels {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.scene-card__features {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-bottom: 1.5rem;
+.card-hebergement__hotel {
+    color: var(--color-text-gray);
+    font-size: 0.95rem;
+    line-height: 1.8;
+    padding-left: 10px;
 }
 
-.scene-card__feature {
-    padding: 0.75rem 1.5rem;
-    background-color: rgba(139, 92, 246, 0.2);
-    border: 1px solid var(--primary-color);
-    border-radius: 3.125rem;
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.scene-card__link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--primary-color);
-    font-size: 1.125rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.scene-card__link-icon {
-    font-size: 1.25rem;
-}
-
-/* Section conteneur des cartes */
-.scenes-section {
-    padding: 4rem 2rem;
-    max-width: 87.5rem;
-    margin: 0 auto;
-}
-
-.scenes-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
+.card-hebergement__hotel::before {
+    content: "• ";
+    color: var(--color-primary);
+    font-weight: bold;
+    margin-right: 8px;
 }
