@@ -7,7 +7,7 @@
 /* Section hébergements */
 .hebergements {
     padding: 80px 20px;
-    background-color: var(--color-dark-navy);
+    background-color: var(--color-dark-blue);
 }
 
 .hebergements__container {
@@ -26,13 +26,12 @@
 .hebergements__icon {
     width: 48px;
     height: 48px;
-    filter: brightness(0) saturate(100%) invert(68%) sepia(48%) saturate(1821%) hue-rotate(226deg) brightness(102%) contrast(101%);
 }
 
 .hebergements__title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--color-violet);
+    font-size: var(--fs-h3);
+    font-weight: var(--weight-blod);
+    color: var(--color-white);
 }
 
 /* Grille des cartes */
@@ -44,48 +43,41 @@
 
 /* Carte d'hébergement */
 .card-hebergement {
-    background: rgba(15, 23, 42, 0.5);
-    border: 2px solid rgba(138, 70, 255, 0.3);
+    background: var(--color-dark-blue);
+    border: 2px solid var(--color-violet-200);
     border-radius: 20px;
     padding: 35px;
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.card-hebergement:hover {
-    transform: translateY(-5px);
-    border-color: var(--color-primary);
-}
-
 .card-hebergement__name {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: var(--color-text-white);
+    font-size: var(--fs-h3);
+    font-weight: var(--weight-blod);
+    color: var(--color-white);
     margin-bottom: 15px;
 }
 
 .card-hebergement__description {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--color-text-gray);
+    font-size: var(--fs-body-2);
+    line-height: var(--fs-body-2);
+    color: var(--color-clay);
     margin-bottom: 20px;
 }
 
 .card-hebergement__price {
-    font-size: 1.25rem;
-    font-weight: 600;
-    background: linear-gradient(135deg, var(--color-primary-light), var(--color-secondary));
-    background-clip: text;
-    color: transparent;
+    font-size: var(--fs-body-1);
+    font-weight: var(--weight-regular);
+    color: var(--color-violet);
 }
 
 /* Carte partenaire (violet) */
 .card-hebergement--partenaire {
-    background: linear-gradient(135deg, rgba(88, 28, 135, 0.4), rgba(109, 40, 217, 0.4));
-    border-color: var(--color-primary);
+    background: linear-gradient(45deg, #1E163E 0%, #1E163E 100%);
+    border-color: linear-gradient(45deg, #1E163E 0%, #1E163E 100%);
 }
 
 .card-hebergement--partenaire .card-hebergement__name {
-    font-size: 1.75rem;
+    font-size: var(--fs-h3);
     margin-bottom: 20px;
 }
 
@@ -100,15 +92,15 @@
 }
 
 .card-hebergement__hotel {
-    color: var(--color-text-gray);
-    font-size: 0.95rem;
-    line-height: 1.8;
+    color: var(--color-gris);
+    font-size: var(--fs-body-2);
+    line-height: var(--line-height-2);
     padding-left: 10px;
 }
 
 .card-hebergement__hotel::before {
     content: "• ";
-    color: var(--color-primary);
-    font-weight: bold;
+    color: var(--color-gris);
+    font-weight: var(--weight-blod);
     margin-right: 8px;
 }

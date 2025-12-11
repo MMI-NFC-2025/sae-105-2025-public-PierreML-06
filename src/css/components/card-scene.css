@@ -1,8 +1,7 @@
 /* Carte de scène - Méthodologie BEM */
 
 .scene-card {
-    background-color: rgba(15, 23, 42, 0.8);
-    border: 1px solid var(--primary-color);
+    background-color: var(--color-black-blue);
     border-radius: 1.5rem;
     overflow: hidden;
     transition: transform 0.3s ease, border-color 0.3s ease;
@@ -26,18 +25,16 @@
 }
 
 .scene-card__title {
-    font-size: 3rem;
-    font-weight: 800;
+    font-size: var(--fs-h2);
+    font-weight: var(--weight-blod);
     margin: 0 0 1.5rem 0;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    background-clip: text;
-    color: transparent;
+    color: var(--color-violet);
 }
 
 .scene-card__description {
-    font-size: 1.125rem;
-    line-height: 1.7;
-    color: var(--text-secondary);
+    font-size: var(--fs-body-2);
+    line-height: var(--line-height-2);
+    color: var(--color-clay);
     margin: 0 0 1.5rem 0;
 }
 
@@ -51,12 +48,11 @@
 .scene-card__capacity-icon {
     width: 1.5rem;
     height: 1.5rem;
-    color: var(--primary-color);
 }
 
 .scene-card__capacity-text {
-    font-size: 1.125rem;
-    color: var(--text-secondary);
+    font-size: var(--fs-body-2);
+    color: var(--color-gris);
 }
 
 .scene-card__features {
@@ -68,27 +64,23 @@
 
 .scene-card__feature {
     padding: 0.75rem 1.5rem;
-    background-color: rgba(139, 92, 246, 0.2);
-    border: 1px solid var(--primary-color);
+    background-color: rgba(52, 39, 92, 0.2);
+    border: 1px solid var(--color-violet-200);
     border-radius: 3.125rem;
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    font-weight: 500;
+    color: var(--color-white);
+    font-size: var(--fs-body-2);
+    font-weight: var(--weight-regular);
 }
 
 .scene-card__link {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--primary-color);
-    font-size: 1.125rem;
-    font-weight: 600;
+    color: var(--color-violet);
+    font-size: var(--fs-body-2);
+    font-weight: var(--weight-regular);
     text-decoration: none;
     transition: color 0.3s ease;
-}
-
-.scene-card__link-icon {
-    font-size: 1.25rem;
 }
 
 /* Section conteneur des cartes */

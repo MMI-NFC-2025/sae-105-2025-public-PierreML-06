@@ -4,7 +4,7 @@
 
 .tarifs {
     padding: 4rem 2rem;
-    background-color: var(--couleur-primaire);
+    background-color: #000000;
 }
 
 .tarifs__container {
@@ -22,16 +22,12 @@
 .tarifs__icon {
     width: 3rem;
     height: 3rem;
-    fill: var(--couleur-accent);
 }
 
 .tarifs__title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, #c27aff 0%, #ad46ff 50%, #9810fa 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-size: var(--fs-h3);
+    font-weight: var(--weight-blod);
+    color: var(--color-violet);
 }
 
 .tarifs__grid {
@@ -52,9 +48,8 @@
 
 /* Carte populaire */
 .card-tarif--populaire {
-    background: linear-gradient(135deg, rgba(152, 16, 250, 0.3) 0%, rgba(173, 70, 255, 0.3) 100%);
-    border-color: var(--couleur-accent);
-    box-shadow: 0 0.25rem 1.5rem rgba(152, 16, 250, 0.4);
+    background: linear-gradient(45deg, #270724 0%, #270724 100%);
+    border-color: linear-gradient(45deg, #270724 0%, #270724 100%);
 }
 
 /* Badge populaire */
@@ -64,24 +59,24 @@
     left: 50%;
     transform: translateX(-50%);
     background: linear-gradient(135deg, #c27aff 0%, #ff007a 100%);
-    color: white;
+    color: var(--color-white);
     padding: 0.5rem 1.5rem;
     border-radius: 1.5rem;
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-size: var(--fs-body-2);
+    font-weight: var(--weight-regular);
 }
 
 .card-tarif__name {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: white;
+    font-size: var(--fs-h2);
+    font-weight: var(--weight-blod);
+    color: var(--color-white);
     margin-bottom: 0.5rem;
 }
 
 .card-tarif__price {
-    font-size: 3rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, #c27aff 0%, #ad46ff 50%, #9810fa 100%);
+    font-size: var(--fs-h1);
+    font-weight: var(--weight-blod);
+    background: var(--gradient-3C);
     background-clip: text;
     color: transparent;
     margin-bottom: 1.5rem;
@@ -97,8 +92,8 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    color: var(--couleur-texte-secondaire);
-    font-size: 1rem;
+    color: var(--color-gris);
+    font-size: var(--fs-body-2);
     margin-bottom: 1rem;
 }
 
@@ -108,8 +103,8 @@
 
 .card-tarif__feature::before {
     content: "✓";
-    color: var(--couleur-accent);
-    font-weight: 700;
-    font-size: 1.2rem;
+    color: var(--color-gris);
+    font-weight: var(--weight-blod);
+    font-size: var(--fs-body-2);
     flex-shrink: 0;
 }

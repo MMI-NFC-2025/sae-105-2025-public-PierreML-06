@@ -1,10 +1,10 @@
 /* Card Artiste Component - Cartes pour les artistes */
 
 .card-artiste {
-    background: rgba(29, 41, 61, 0.4);
+    background: #000000;
     border-radius: 1.5rem;
     overflow: hidden;
-    border: 0.125rem solid rgba(173, 70, 255, 0.3);
+    border: 0.125rem solid var(--color-violet-200);
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
@@ -25,23 +25,23 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: linear-gradient(135deg, #ad46ff 0%, #fb64b6 100%);
-    color: #ffffff;
+    background: var(--color-violet);
+    color: var(--color-white);
     padding: 0.5rem 1.5rem;
     border-radius: 2rem;
-    font-size: 0.95rem;
-    font-weight: 600;
+    font-size: var(--fs-body-2);
+    font-weight: var(--weight-semiblod);
 }
 
 .card-artiste__content {
     padding: 2rem;
-    background: rgba(12, 18, 31, 0.8);
+    background: var(--color-dark-blue);
 }
 
 .card-artiste__name {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #ffffff;
+    font-size: var(--fs-h2);
+    font-weight: var(--weight-semiblod);
+    color: var(--color-white);
     margin-bottom: 1.5rem;
 }
 
@@ -55,8 +55,8 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    color: #90a1b9;
-    font-size: 1rem;
+    color: var(--color-gris);
+    font-size: var(--fs-body-2);
 }
 
 .card-artiste__icon {
@@ -66,8 +66,8 @@
 }
 
 .card-artiste__time {
-    color: #90a1b9;
-    font-size: 1rem;
+    color: var(--color-gris);
+    font-size: var(--fs-body-2);
     margin-top: 0.5rem;
 }
 

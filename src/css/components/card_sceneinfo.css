@@ -3,14 +3,14 @@
 /* Section principale */
 .scene-info-section {
     padding: 4rem 2rem;
-    background-color: var(--background-color);
+    background-color: var(--color-black-blue);
 }
 
 .scene-info-section__title {
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    font-size: var(--fs-h2);
+    font-weight: var(--weight-blod);
+    background: var(--gradient-3C);
     background-clip: text;
     color: transparent;
     margin-bottom: 3rem;
@@ -28,29 +28,24 @@
 /* Carte d'information */
 .scene-info-card {
     background: rgba(30, 41, 59, 0.5);
-    border: 0.125rem solid rgba(139, 92, 246, 0.3);
+    border: 0.125rem solid var(--color-violet-200);
     border-radius: 1rem;
     padding: 2rem;
     transition: all 0.3s ease;
 }
 
-.scene-info-card:hover {
-    border-color: rgba(139, 92, 246, 0.6);
-    transform: translateY(-0.25rem);
-}
-
 /* Titre de la carte */
 .scene-info-card__title {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #ffffff;
+    font-size: var(--fs-h3);
+    font-weight: var(--weight-regular);
+    color: var(--color-white);
     margin-bottom: 1.5rem;
 }
 
 /* Section capacité */
 .scene-info-card__capacity-label {
-    font-size: 0.875rem;
-    color: #94a3b8;
+    font-size: var(--fs-body-3);
+    color: var(--color-gris);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 0.5rem;
@@ -58,17 +53,17 @@
 }
 
 .scene-info-card__capacity-value {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #a855f7;
+    font-size: var(--fs-body-1);
+    font-weight: var(--weight-smiblod);
+    color: var(--color-violet);
     margin-bottom: 1.5rem;
     display: block;
 }
 
 /* Section points forts */
 .scene-info-card__features-label {
-    font-size: 0.875rem;
-    color: #94a3b8;
+    font-size: var(--fs-body-3);
+    color: var(--color-gris);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 1rem;
@@ -89,8 +84,8 @@
     display: flex;
     align-items: center;
     gap: 0.75rem;
-    color: #e2e8f0;
-    font-size: 1rem;
+    color: var(--color-clay);
+    font-size: var(--fs-body-2);
 }
 
 /* Bullet point violet */
@@ -98,7 +93,7 @@
     content: "";
     width: 0.5rem;
     height: 0.5rem;
-    background-color: #a855f7;
+    background-color: var(--color-violet);
     border-radius: 50%;
     flex-shrink: 0;
 }
