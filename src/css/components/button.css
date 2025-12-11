@@ -17,11 +17,6 @@
     width: 100%;
 }
 
-.button:hover {
-    transform: translateY(-0.125rem);
-    opacity: 0.9;
-}
-
 .button:active {
     transform: translateY(0);
 }
@@ -40,19 +35,10 @@
     padding: calc(1rem - 0.125rem) calc(2rem - 0.125rem);
 }
 
-.button--secondary:hover {
-    background: rgba(255, 255, 255, 0.1);
-}
-
 /* Ajout du style pour les boutons de la section presse */
 /* Bouton violet foncé pour l'espace presse */
 .button--press-secondary {
-    background: rgba(88, 28, 135, 0.8);
+    background: var(--color-violet-200);
     color: var(--color-white);
     border: 0.0625rem solid rgba(139, 92, 246, 0.5);
-}
-
-.button--press-secondary:hover {
-    background: rgba(88, 28, 135, 1);
-    border-color: rgba(139, 92, 246, 0.8);
 }
