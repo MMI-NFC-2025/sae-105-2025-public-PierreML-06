@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
-- URL du site :
-- URL FIGMA :
+- NOM : Mouilleseaux Lhuillier
+- PRÉNOM : Pierre
+- GROUPE : B2
+- URL du site : lumimix.pierre-mouilleseaux-lhuillier.fr
+- URL FIGMA : https://www.figma.com/design/1ahwUQIE7uTQ7xEFj5TdUM/Lumimix-maquette?node-id=30-1966&t=7JesAhLnOFnLdKUw-1
 
 ## Sujet
 
