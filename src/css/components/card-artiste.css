@@ -74,9 +74,102 @@
 /* Grid layout pour les cartes */
 .artistes-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(21.875rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(21.875rem, 100%), 1fr));
     gap: 2rem;
     padding: 4rem 2rem;
     max-width: 87.5rem;
     margin: 0 auto;
+    justify-content: center;
+    /* bonus */
+}
+
+/* Carousel styles for artist page gallery */
+.carousel {
+    position: relative;
+    max-width: 86rem;
+    margin: 2rem auto 0 auto;
+}
+
+.carousel__track-container {
+    overflow: hidden;
+}
+
+.carousel__track {
+    display: flex;
+    transition: transform 0.45s cubic-bezier(.22, .9, .32, 1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel__slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 0.25rem;
+}
+
+.carousel__img {
+    width: 100%;
+    height: 28rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    display: block;
+}
+
+.carousel__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.45);
+    border: none;
+    color: #fff;
+    width: 3.25rem;
+    height: 3.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel__btn--prev {
+    left: 0.75rem;
+}
+
+.carousel__btn--next {
+    right: 0.75rem;
+}
+
+.carousel__btn svg {
+    display: block;
+}
+
+.carousel__nav {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.carousel__indicator {
+    width: 0.65rem;
+    height: 0.65rem;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel__indicator.is-selected {
+    background: var(--color-violet);
+}
+
+@media (max-width: 700px) {
+    .carousel__img {
+        height: 18rem;
+    }
+
+    .carousel__btn {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 }

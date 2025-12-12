@@ -87,8 +87,7 @@
 
         <!-- Hero section avec image de l'artiste -->
         <section class="card-artistePage__hero">
-            <img src="/placeholder.svg?height=1080&width=1920" alt="Charlotte de Witte"
-                class="card-artistePage__hero-bg">
+            <img src="assets/img/dj_rouge.avif" alt="Charlotte de Witte" class="card-artistePage__hero-bg">
             <div class="card-artistePage__hero-overlay"></div>
             <div class="card-artistePage__hero-content">
                 <span class="card-artistePage__hero-genre">Techno</span>
@@ -142,13 +141,39 @@
         <!-- Ajout de la section Galerie -->
         <section class="card-artistePage__gallery">
             <h2 class="card-artistePage__gallery-title">Galerie</h2>
-            <div class="card-artistePage__gallery-grid">
-                <img src="/placeholder.svg?height=800&width=1200" alt="Scène avec lasers colorés"
-                    class="card-artistePage__gallery-img">
-                <img src="/placeholder.svg?height=800&width=1200" alt="Foule avec éclairage rouge"
-                    class="card-artistePage__gallery-img">
-                <img src="/placeholder.svg?height=800&width=1200" alt="Foule du festival en journée"
-                    class="card-artistePage__gallery-img">
+
+            <div class="carousel" data-carousel>
+                <button class="carousel__btn carousel__btn--prev" aria-label="Précédent">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <div class="carousel__track-container">
+                    <ul class="carousel__track">
+                        <li class="carousel__slide">
+                            <img src="assets/img/scene_violet_lazer.avif" alt="Scène avec lasers colorés"
+                                class="carousel__img">
+                        </li>
+                        <li class="carousel__slide">
+                            <img src="assets/img/dj_flamme.avif" alt="Foule avec éclairage rouge" class="carousel__img">
+                        </li>
+                        <li class="carousel__slide">
+                            <img src="assets/img/dj_rouge_2.avif" alt="Foule du festival en journée"
+                                class="carousel__img">
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="carousel__btn carousel__btn--next" aria-label="Suivant">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <div class="carousel__nav" aria-hidden="false"></div>
             </div>
         </section>
 
@@ -261,6 +286,7 @@
         <!-- Copyright -->
         <p class="footer__copyright">© 2025 Lumimix Festival. Tous droits réservés.</p>
     </footer>
+    <script type="module" src="src/js/carousel.js"></script>
 </body>
 
 </html>

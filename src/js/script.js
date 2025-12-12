@@ -89,3 +89,92 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 })
+
+// Simple carousel module for artist gallery
+const carousels = document.querySelectorAll('[data-carousel]');
+if (carousels.length === 0) {
+  // nothing to do
+} else {
+  carousels.forEach(initCarousel);
+}
+
+function initCarousel(root) {
+  const track = root.querySelector('.carousel__track');
+  const slides = Array.from(track.children);
+  const prevButton = root.querySelector('.carousel__btn--prev');
+  const nextButton = root.querySelector('.carousel__btn--next');
+  const nav = root.querySelector('.carousel__nav');
+
+  let currentIndex = 0;
+  let autoplayInterval = null;
+
+  function setSlidePositions() {
+    slides.forEach((slide, index) => {
+      slide.style.left = (100 * index) + '%';
+    });
+  }
+
+  function createDots() {
+    slides.forEach((_, idx) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'carousel__indicator';
+      if (idx === 0) btn.classList.add('is-selected');
+      btn.addEventListener('click', () => moveTo(idx));
+      nav.appendChild(btn);
+    });
+  }
+
+  function updateDots(idx) {
+    const dots = Array.from(nav.children);
+    dots.forEach((d, i) => d.classList.toggle('is-selected', i === idx));
+  }
+
+  function moveTo(targetIndex) {
+    track.style.transform = `translateX(-${100 * targetIndex}%)`;
+    updateDots(targetIndex);
+    currentIndex = targetIndex;
+  }
+
+  prevButton.addEventListener('click', () => {
+    const target = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
+    moveTo(target);
+  });
+
+  nextButton.addEventListener('click', () => {
+    const target = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
+    moveTo(target);
+  });
+
+  // keyboard navigation
+  root.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') prevButton.click();
+    if (e.key === 'ArrowRight') nextButton.click();
+  });
+
+  // autoplay
+  function startAutoplay() {
+    stopAutoplay();
+    autoplayInterval = setInterval(() => nextButton.click(), 4500);
+  }
+  function stopAutoplay() {
+    if (autoplayInterval) clearInterval(autoplayInterval);
+  }
+
+  root.addEventListener('mouseenter', stopAutoplay);
+  root.addEventListener('mouseleave', startAutoplay);
+  root.addEventListener('focusin', stopAutoplay);
+  root.addEventListener('focusout', startAutoplay);
+
+  window.addEventListener('resize', setSlidePositions);
+
+  // Initialize
+  setSlidePositions();
+  createDots();
+  startAutoplay();
+
+  // make carousel focusable for keyboard
+  if (!root.hasAttribute('tabindex')) root.setAttribute('tabindex', '0');
+}
+
+export { };
