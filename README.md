@@ -3,7 +3,7 @@
 
 À compléter :
 
-- NOM : Mouilleseaux Lhuillier
+- NOM : Mouilleseaux Lhuillier 
 - PRÉNOM : Pierre
 - GROUPE : B2
 - URL du site : lumimix.pierre-mouilleseaux-lhuillier.fr
