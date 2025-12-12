@@ -1,0 +1,57 @@
+/* Styles pour la page 404 - conforme à la DA du site */
+.error-404 {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.error-404__inner {
+    max-width: 68rem;
+    width: 100%;
+}
+
+.error-404__code {
+    font-size: clamp(4.5rem, 12vw, 9.5rem);
+    font-weight: 900;
+    color: var(--color-white);
+    letter-spacing: -0.02em;
+    margin: 0 0 1rem 0;
+    background: linear-gradient(90deg, var(--color-violet) 0%, var(--color-pink) 50%, var(--color-blue) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.error-404__title {
+    font-size: clamp(1.25rem, 2.2vw, 2rem);
+    color: var(--color-white);
+    margin: 0 0 0.5rem 0;
+}
+
+.error-404__desc {
+    color: var(--color-gris);
+    margin-bottom: 1.5rem;
+    font-size: var(--fs-body-1);
+}
+
+.error-404__actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.error-404__alt-links {
+    margin-top: 1.25rem;
+    color: var(--color-gris);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 700px) {
+    .error-404 {
+        padding: 4rem 1.25rem;
+    }
+}

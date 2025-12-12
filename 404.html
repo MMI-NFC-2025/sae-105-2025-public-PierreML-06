@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — Page non trouvée — Lumimix</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/components/404.css">
+
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="header__logo">
+            <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="header__logo-img">
+        </a>
+
+        <button class="header__menu-toggle" aria-label="Menu" aria-expanded="false">
+            <span class="header__menu-toggle-bar"></span>
+            <span class="header__menu-toggle-bar"></span>
+            <span class="header__menu-toggle-bar"></span>
+        </button>
+    </header>
+
+    <nav class="menu" id="menu">
+        <div class="menu__header">
+            <a href="index.html" class="menu__logo">
+                <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="menu__logo-img">
+            </a>
+
+            <button class="menu__close" aria-label="Fermer le menu">
+                <span class="menu__close-bar"></span>
+                <span class="menu__close-bar"></span>
+            </button>
+        </div>
+
+        <div class="menu__nav">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="festival.html" class="menu__link">Le Festival</a></li>
+                <li class="menu__item"><a href="programation.html" class="menu__link">Programme</a></li>
+                <li class="menu__item"><a href="artiste.html" class="menu__link">Artistes</a></li>
+                <li class="menu__item"><a href="scene.html" class="menu__link">Scènes</a></li>
+                <li class="menu__item"><a href="info_pratique.html" class="menu__link">Infos pratiques</a></li>
+                <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="error-404">
+            <div class="error-404__inner">
+                <h1 class="error-404__code">404</h1>
+                <h2 class="error-404__title">Erreur 404 — Page introuvable</h2>
+                <p class="error-404__desc">La page que vous recherchez semble avoir disparu ou n'existe pas. Essayez
+                    de revenir à l'accueil ou explorez nos artistes et scènes.</p>
+
+                <div class="error-404__actions">
+                    <a href="index.html" class="button button--primary">Retour à l'accueil</a>
+                    <a href="artiste.html" class="button button--secondary">Voir les artistes</a>
+                </div>
+
+                <div class="error-404__alt-links">
+                    <a href="contact.html">Nous contacter</a> — <a href="programation.html">Consulter le
+                        programme</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="index.html" class="footer__logo">
+            <img src="assets/icons/logo_lumimix.svg" alt="Lumimix Logo" class="footer__logo-img">
+        </a>
+
+        <p class="footer__description">Un festival nocturne immersif où DJs, son et lumière fusionnent pour créer un
+            voyage sensoriel.</p>
+
+        <section class="footer__section">
+            <h3 class="footer__section-title">Navigation</h3>
+            <ul class="footer__list">
+                <li class="footer__item"><a href="festival.html" class="footer__link">Le Festival</a></li>
+                <li class="footer__item"><a href="programation.html" class="footer__link">Programme</a></li>
+                <li class="footer__item"><a href="artiste.html" class="footer__link">Artistes</a></li>
+            </ul>
+        </section>
+
+        <section class="footer__section">
+            <h3 class="footer__section-title">Suivez-nous</h3>
+            <div class="footer__social">
+                <a href="https://www.youtube.com/" class="footer__social-link" aria-label="YouTube">
+                    <img src="assets/icons/youtube.svg" alt="YouTube" class="footer__social-icon">
+                </a>
+                <a href="https://x.com/?lang=fr" class="footer__social-link" aria-label="X (Twitter)">
+                    <img src="assets/icons/x.svg" alt="X (Twitter)" class="footer__social-icon">
+                </a>
+                <a href="https://www.instagram.com/" class="footer__social-link" aria-label="Instagram">
+                    <img src="assets/icons/instagram.svg" alt="Instagram" class="footer__social-icon">
+                </a>
+            </div>
+        </section>
+
+        <p class="footer__copyright">© 2025 Lumimix Festival. Tous droits réservés.</p>
+    </footer>
+
+    <script type="module" src="src/js/script.js"></script>
+</body>
+
+</html>
