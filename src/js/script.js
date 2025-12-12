@@ -69,6 +69,9 @@ function setActiveMenuLink() {
 setActiveMenuLink()
 
 
+// menu voir https://lumimix.pierre-mouilleseaux-lhuillier.fr/artiste
+
+
 // Gestion des FAQ accordéons
 document.addEventListener("DOMContentLoaded", () => {
   const faqItems = document.querySelectorAll(".faq-item")
@@ -89,6 +92,10 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 })
+
+
+// faq lien https://lumimix.pierre-mouilleseaux-lhuillier.fr/info_pratique
+
 
 // Simple carousel module for artist gallery
 const carousels = document.querySelectorAll('[data-carousel]');
@@ -178,3 +185,5 @@ function initCarousel(root) {
 }
 
 export { };
+
+//carousel https://lumimix.pierre-mouilleseaux-lhuillier.fr/card_artiste
