@@ -84,8 +84,10 @@
 
 /* Card Transport Covoiturage (version avec gradient) */
 .card-transport--covoiturage {
-    background: var(--gradient-2C);
-    border: 0.125rem solid var(--gradient-2C);
+    background: linear-gradient(90deg,
+            rgba(134, 16, 67, 0.3) 0%,
+            rgba(29, 41, 61, 0.3) 100%);
+    border: 0.0625rem solid rgba(173, 70, 255, 0.5);
 }
 
 /* Card Adresse */
